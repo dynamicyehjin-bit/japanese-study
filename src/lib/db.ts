@@ -7,9 +7,14 @@ import type {
   StudyProgress,
   Vocabulary,
   Kanji,
+  ImportReport,
+  DatasetRegistration,
 } from "./types";
 import { seed } from "./seed";
+import { parseDataset } from "./import";
+import bundledDataset from "../data/hackers-pages-2-4.json";
 export class StudyDB extends Dexie {
+  metadata!: Table<DatasetRegistration, string>;
   kanji!: Table<Kanji, string>;
   vocabulary!: Table<Vocabulary, string>;
   history!: Table<StudyHistory, number>;
@@ -22,6 +27,7 @@ export class StudyDB extends Dexie {
       history: "++id,[item_type+item_id],studied_at",
       progress: "[item_type+item_id],item_type,item_id",
     });
+    this.version(2).stores({ metadata: "key" });
     this.on("populate", async () => {
       await this.kanji.bulkAdd(seed.kanji);
       await this.vocabulary.bulkAdd(seed.vocabulary);
@@ -41,8 +47,29 @@ export const emptyProgress = (
   next_review_at: null,
   is_favorite: false,
 });
-export async function initialize() {
+export async function initialize(options: { includeBundled?: boolean } = {}) {
   await db.open();
+  if (options.includeBundled !== false) await registerBundledDataset();
+}
+export const bundledKey = `dataset:${bundledDataset.dataset_id}:${bundledDataset.schema_version}`;
+export async function registerBundledDataset(): Promise<ImportReport> {
+  return db.transaction(
+    "rw",
+    db.kanji,
+    db.vocabulary,
+    db.metadata,
+    async () => {
+      const existing = await db.metadata.get(bundledKey);
+      if (existing) return existing.report;
+      const report = await mergeRows(parseDataset(bundledDataset));
+      await db.metadata.put({
+        key: bundledKey,
+        registered_at: new Date().toISOString(),
+        report,
+      });
+      return report;
+    },
+  );
 }
 export async function recordAnswer(answer: Omit<StudyHistory, "id">) {
   await db.transaction("rw", db.history, db.progress, async () => {
@@ -64,36 +91,80 @@ export async function toggleFavorite(type: ItemType, id: string) {
     await db.progress.put({ ...p, is_favorite: !p.is_favorite });
   });
 }
+const preserveDetails = (
+  incoming: string[] | null,
+  previous: string[] | null,
+) => (incoming?.length ? incoming : previous?.length ? previous : incoming);
+async function mergeRows(data: Dataset): Promise<ImportReport> {
+  const report: ImportReport = {
+    added: 0,
+    updated: 0,
+    kanji_added: 0,
+    kanji_updated: 0,
+    duplicates: 0,
+    errors: [],
+  };
+  const links = new Map<string, string>();
+  for (const k of data.kanji) {
+    const old = await db.kanji.where("character").equals(k.character).first();
+    const id = old?.id ?? k.id;
+    links.set(k.id, id);
+    if (old) {
+      report.kanji_updated++;
+      report.duplicates++;
+    } else report.kanji_added++;
+    await db.kanji.put(
+      old
+        ? {
+            ...old,
+            ...k,
+            id,
+            korean_hun: k.korean_hun || old.korean_hun || k.korean_hun,
+            korean_eum: k.korean_eum || old.korean_eum || k.korean_eum,
+            onyomi: preserveDetails(k.onyomi, old.onyomi),
+            kunyomi: preserveDetails(k.kunyomi, old.kunyomi),
+            meanings_ko: preserveDetails(k.meanings_ko, old.meanings_ko),
+            metadata_source:
+              k.metadata_source ?? old.metadata_source ?? k.metadata_source,
+            metadata_status:
+              old.metadata_status === "verified" &&
+              k.metadata_status === "needs_verified_dictionary"
+                ? old.metadata_status
+                : (k.metadata_status ?? old.metadata_status),
+          }
+        : k,
+    );
+  }
+  for (const v of data.vocabulary) {
+    const old = await db.vocabulary.where("word").equals(v.word).first();
+    if (old) {
+      report.updated++;
+      report.duplicates++;
+    } else report.added++;
+    const kanji_ids = v.kanji_ids.map((id) => links.get(id) ?? id);
+    for (const id of kanji_ids)
+      if (!(await db.kanji.get(id)))
+        throw new Error(`단어 ${v.word}: 한자 연결 ${id}가 없습니다.`);
+    await db.vocabulary.put({ ...old, ...v, id: old?.id ?? v.id, kanji_ids });
+  }
+  return report;
+}
 export async function mergeDataset(data: Dataset) {
-  return db.transaction("rw", db.kanji, db.vocabulary, async () => {
-    let added = 0;
-    let updated = 0;
-    for (const k of data.kanji) {
-      const old = await db.kanji.get(k.id);
-      await db.kanji.put(
-        old
-          ? {
-              ...old,
-              ...k,
-              korean_hun: k.korean_hun || old.korean_hun,
-              korean_eum: k.korean_eum || old.korean_eum,
-              onyomi: k.onyomi.length ? k.onyomi : old.onyomi,
-              kunyomi: k.kunyomi.length ? k.kunyomi : old.kunyomi,
-              meanings_ko: k.meanings_ko.length
-                ? k.meanings_ko
-                : old.meanings_ko,
-            }
-          : k,
-      );
-    }
-    for (const v of data.vocabulary) {
-      const old = await db.vocabulary.get(v.id);
-      if (old) updated++;
-      else added++;
-      await db.vocabulary.put(v);
-    }
-    return { added, updated };
-  });
+  return db.transaction(
+    "rw",
+    db.kanji,
+    db.vocabulary,
+    db.metadata,
+    async () => {
+      const report = await mergeRows(data);
+      await db.metadata.put({
+        key: "last-import",
+        registered_at: new Date().toISOString(),
+        report,
+      });
+      return report;
+    },
+  );
 }
 export async function exportBackup(): Promise<Backup> {
   return db.transaction(

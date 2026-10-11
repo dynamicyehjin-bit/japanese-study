@@ -359,7 +359,7 @@ function App() {
           {k.korean_hun ? `${k.korean_hun} ${k.korean_eum}` : "훈·음 미등록"}
         </span>
         <span className="word-reading">
-          {k.meanings_ko.join(", ") || "상세 정보를 추가할 수 있어요"}
+          {k.meanings_ko?.join(", ") || "상세 정보를 추가할 수 있어요"}
         </span>
       </button>
       <StarButton
@@ -768,7 +768,11 @@ function App() {
                         </div>
                         <button
                           className="stat-card stat-button"
-                          onClick={() => reviewWords.length ? start(reviewWords) : navigate("wrong")}
+                          onClick={() =>
+                            reviewWords.length
+                              ? start(reviewWords)
+                              : navigate("wrong")
+                          }
                         >
                           <span className="stat-icon coral">
                             <RefreshCw size={21} />
@@ -1009,7 +1013,7 @@ function App() {
                     {studyTab === "kanji" && page !== "wrong"
                       ? (page === "favorites" ? favoriteKanji : kanji)
                           .filter((k) =>
-                            `${k.character}${k.korean_hun}${k.korean_eum}${k.meanings_ko.join("")}`.includes(
+                            `${k.character}${k.korean_hun}${k.korean_eum}${k.meanings_ko?.join("")}`.includes(
                               search,
                             ),
                           )
@@ -1174,7 +1178,12 @@ function DetailModal({
           <p className="detail-reading" lang="ja">
             {item.reading}
           </p>
-          <p className="detail-meaning">{item.meanings_ko.join(", ")}</p>
+          <p className="detail-meaning">{item.meanings_ko?.join(", ")}</p>
+          {item.starred_in_book && (
+            <p className="info-note">
+              ★ 교재 별표 단어 · 사용자 즐겨찾기와 별도로 관리됩니다.
+            </p>
+          )}
           <h2>이 단어의 한자</h2>
           <p className="muted">한 글자를 눌러 상세 정보를 살펴보세요.</p>
           <div className="kanji-pills">
@@ -1214,15 +1223,15 @@ function DetailModal({
             </div>
             <div>
               <dt>음독</dt>
-              <dd lang="ja">{item.onyomi.join(" · ") || "미등록"}</dd>
+              <dd lang="ja">{item.onyomi?.join(" · ") || "미등록"}</dd>
             </div>
             <div>
               <dt>훈독</dt>
-              <dd lang="ja">{item.kunyomi.join(" · ") || "미등록"}</dd>
+              <dd lang="ja">{item.kunyomi?.join(" · ") || "미등록"}</dd>
             </div>
             <div>
               <dt>한국어 의미</dt>
-              <dd>{item.meanings_ko.join(", ") || "미등록"}</dd>
+              <dd>{item.meanings_ko?.join(", ") || "미등록"}</dd>
             </div>
           </dl>
           <h2>이 한자가 쓰인 단어</h2>
@@ -1251,6 +1260,7 @@ function DataPanel({
   onNotice: (s: string) => void;
   counts: { vocabulary: number; kanji: number; history: number };
 }) {
+  const registrations = useLiveQuery(() => db.metadata.toArray(), []) ?? [];
   const [input, setInput] = useState("");
   const [format, setFormat] = useState<"json" | "csv">("json");
   const [error, setError] = useState("");
@@ -1281,7 +1291,7 @@ function DataPanel({
     try {
       const result = await mergeDataset(data);
       setResult(
-        `새 단어 ${result.added}개 추가 · 기존 단어 ${result.updated}개 병합. 학습 기록과 즐겨찾기는 유지됩니다.`,
+        `새 단어 ${result.added}개 · 새 한자 ${result.kanji_added}개 등록 · 중복 ${result.duplicates}개 병합 · 오류 ${result.errors.length}개. 학습 기록과 즐겨찾기는 유지됩니다.`,
       );
     } catch {
       setError("저장에 실패했습니다. 형식 또는 저장 공간을 확인해주세요.");
@@ -1338,6 +1348,16 @@ function DataPanel({
           <p>단어를 추가하고, 소중한 학습 기록을 안전하게 보관하세요.</p>
         </div>
       </div>
+      {registrations
+        .filter((r) => r.key.startsWith("dataset:"))
+        .map((r) => (
+          <div className="info-note" key={r.key} role="status">
+            해커스 2–4쪽 자동 등록: 새 단어 {r.report.added}개 · 새 한자{" "}
+            {r.report.kanji_added}개 · 중복 {r.report.duplicates}개 · 오류{" "}
+            {r.report.errors.length}개. 기기별 기존 데이터에 따라 등록 수는
+            달라집니다.
+          </div>
+        ))}
       <div className="data-summary">
         <span>
           단어 <b>{counts.vocabulary}개</b>

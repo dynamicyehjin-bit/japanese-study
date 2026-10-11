@@ -1,0 +1,6512 @@
+{
+  "schema_version": "1.0.0",
+  "dataset_id": "hackers_jlpt_n3_d20_kanji_reading_pp2_4",
+  "source": {
+    "title": "해커스 JLPT N3 시험 D-20 빈출 단어·문형 암기장",
+    "pages": [
+      2,
+      3,
+      4
+    ],
+    "sections": {
+      "dakuten": "탁음·반탁음에 주의해야 하는 단어",
+      "sokuon": "촉음에 주의해야 하는 단어"
+    },
+    "extraction": "첨부 사진을 보고 표기·후리가나·한국어 뜻을 수작업으로 옮김",
+    "star_meaning": "★ 표시는 원본 교재에서 단어 오른쪽에 인쇄된 별 표시이며 사용자 즐겨찾기가 아닙니다.",
+    "kanji_metadata_note": "원본은 단어의 읽기·한국어 뜻을 제공하지만 개별 한자의 한국어 훈음/음독/훈독은 제공하지 않습니다. 해당 필드는 검증된 사전 보완 전까지 null입니다."
+  },
+  "vocabulary": [
+    {
+      "id": "vocab:14aadd7272296f",
+      "word": "改札",
+      "reading": "かいさつ",
+      "meanings_ko": [
+        "개찰"
+      ],
+      "source_meaning_ko": "개찰",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:改",
+        "kanji:札"
+      ],
+      "starred_in_book": true,
+      "source_locations": [
+        {
+          "page": 2,
+          "column": "left",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:548f2c3307b685",
+      "word": "価格",
+      "reading": "かかく",
+      "meanings_ko": [
+        "가격"
+      ],
+      "source_meaning_ko": "가격",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:価",
+        "kanji:格"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 2,
+          "column": "left",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:94a19fe63ea4a0",
+      "word": "各駅",
+      "reading": "かくえき",
+      "meanings_ko": [
+        "각 역"
+      ],
+      "source_meaning_ko": "각 역",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:各",
+        "kanji:駅"
+      ],
+      "starred_in_book": true,
+      "source_locations": [
+        {
+          "page": 2,
+          "column": "left",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:1aeae6587e6caf",
+      "word": "観客",
+      "reading": "かんきゃく",
+      "meanings_ko": [
+        "관객"
+      ],
+      "source_meaning_ko": "관객",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:観",
+        "kanji:客"
+      ],
+      "starred_in_book": true,
+      "source_locations": [
+        {
+          "page": 2,
+          "column": "left",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:bf4a8bf62bf90e",
+      "word": "完成",
+      "reading": "かんせい",
+      "meanings_ko": [
+        "완성"
+      ],
+      "source_meaning_ko": "완성",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:完",
+        "kanji:成"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 2,
+          "column": "left",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:4138df866b91b6",
+      "word": "血液型",
+      "reading": "けつえきがた",
+      "meanings_ko": [
+        "혈액형"
+      ],
+      "source_meaning_ko": "혈액형",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:血",
+        "kanji:液",
+        "kanji:型"
+      ],
+      "starred_in_book": true,
+      "source_locations": [
+        {
+          "page": 2,
+          "column": "left",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:ebc3546d9b4e8e",
+      "word": "方角",
+      "reading": "ほうがく",
+      "meanings_ko": [
+        "방향"
+      ],
+      "source_meaning_ko": "방향",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:方",
+        "kanji:角"
+      ],
+      "starred_in_book": true,
+      "source_locations": [
+        {
+          "page": 2,
+          "column": "left",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:b364674df101a3",
+      "word": "録画",
+      "reading": "ろくが",
+      "meanings_ko": [
+        "녹화"
+      ],
+      "source_meaning_ko": "녹화",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:録",
+        "kanji:画"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 2,
+          "column": "left",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:93d06af3562768",
+      "word": "延期",
+      "reading": "えんき",
+      "meanings_ko": [
+        "연기"
+      ],
+      "source_meaning_ko": "연기",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:延",
+        "kanji:期"
+      ],
+      "starred_in_book": true,
+      "source_locations": [
+        {
+          "page": 2,
+          "column": "left",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:6e8bbfc718e4cd",
+      "word": "気温",
+      "reading": "きおん",
+      "meanings_ko": [
+        "기온"
+      ],
+      "source_meaning_ko": "기온",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:気",
+        "kanji:温"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 2,
+          "column": "left",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:78da824a5ad4a0",
+      "word": "機械",
+      "reading": "きかい",
+      "meanings_ko": [
+        "기계"
+      ],
+      "source_meaning_ko": "기계",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:機",
+        "kanji:械"
+      ],
+      "starred_in_book": true,
+      "source_locations": [
+        {
+          "page": 2,
+          "column": "left",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:a23a91c9224b04",
+      "word": "議会",
+      "reading": "ぎかい",
+      "meanings_ko": [
+        "의회"
+      ],
+      "source_meaning_ko": "의회",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:議",
+        "kanji:会"
+      ],
+      "starred_in_book": true,
+      "source_locations": [
+        {
+          "page": 2,
+          "column": "left",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:e42c4ae9055b91",
+      "word": "疑問",
+      "reading": "ぎもん",
+      "meanings_ko": [
+        "의문"
+      ],
+      "source_meaning_ko": "의문",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:疑",
+        "kanji:問"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 2,
+          "column": "left",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:fafc8567e07b5c",
+      "word": "行事",
+      "reading": "ぎょうじ",
+      "meanings_ko": [
+        "행사"
+      ],
+      "source_meaning_ko": "행사",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:行",
+        "kanji:事"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 2,
+          "column": "left",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:9ad6125d3b4b72",
+      "word": "訓練",
+      "reading": "くんれん",
+      "meanings_ko": [
+        "훈련"
+      ],
+      "source_meaning_ko": "훈련",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:訓",
+        "kanji:練"
+      ],
+      "starred_in_book": true,
+      "source_locations": [
+        {
+          "page": 2,
+          "column": "left",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:ba4c9479729c0a",
+      "word": "予約",
+      "reading": "よやく",
+      "meanings_ko": [
+        "예약"
+      ],
+      "source_meaning_ko": "예약",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:予",
+        "kanji:約"
+      ],
+      "starred_in_book": true,
+      "source_locations": [
+        {
+          "page": 2,
+          "column": "left",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:61ef15ea3a386c",
+      "word": "家具",
+      "reading": "かぐ",
+      "meanings_ko": [
+        "가구"
+      ],
+      "source_meaning_ko": "가구",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:家",
+        "kanji:具"
+      ],
+      "starred_in_book": true,
+      "source_locations": [
+        {
+          "page": 2,
+          "column": "left",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:3236e62420e368",
+      "word": "偶然",
+      "reading": "ぐうぜん",
+      "meanings_ko": [
+        "우연"
+      ],
+      "source_meaning_ko": "우연",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:偶",
+        "kanji:然"
+      ],
+      "starred_in_book": true,
+      "source_locations": [
+        {
+          "page": 2,
+          "column": "left",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:b6f6af791a2184",
+      "word": "会計",
+      "reading": "かいけい",
+      "meanings_ko": [
+        "(대금)계산"
+      ],
+      "source_meaning_ko": "(대금)계산",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:会",
+        "kanji:計"
+      ],
+      "starred_in_book": true,
+      "source_locations": [
+        {
+          "page": 2,
+          "column": "left",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:edee0c731ca7ba",
+      "word": "経営",
+      "reading": "けいえい",
+      "meanings_ko": [
+        "경영"
+      ],
+      "source_meaning_ko": "경영",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:経",
+        "kanji:営"
+      ],
+      "starred_in_book": true,
+      "source_locations": [
+        {
+          "page": 2,
+          "column": "left",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:ee6418586ea0fa",
+      "word": "外科",
+      "reading": "げか",
+      "meanings_ko": [
+        "외과"
+      ],
+      "source_meaning_ko": "외과",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:外",
+        "kanji:科"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 2,
+          "column": "left",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:f1ffc2eb4e34db",
+      "word": "月末",
+      "reading": "げつまつ",
+      "meanings_ko": [
+        "월말"
+      ],
+      "source_meaning_ko": "월말",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:月",
+        "kanji:末"
+      ],
+      "starred_in_book": true,
+      "source_locations": [
+        {
+          "page": 2,
+          "column": "left",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:bdd6ed48d33641",
+      "word": "現象",
+      "reading": "げんしょう",
+      "meanings_ko": [
+        "현상"
+      ],
+      "source_meaning_ko": "현상",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:現",
+        "kanji:象"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 2,
+          "column": "left",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:2c71b8a7bdb412",
+      "word": "上下",
+      "reading": "じょうげ",
+      "meanings_ko": [
+        "상하"
+      ],
+      "source_meaning_ko": "상하",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:上",
+        "kanji:下"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 2,
+          "column": "left",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:b1f98609ded780",
+      "word": "講義",
+      "reading": "こうぎ",
+      "meanings_ko": [
+        "강의"
+      ],
+      "source_meaning_ko": "강의",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:講",
+        "kanji:義"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 2,
+          "column": "right",
+          "section": "dakuten"
+        },
+        {
+          "page": 4,
+          "column": "left",
+          "section": "sokuon"
+        }
+      ]
+    },
+    {
+      "id": "vocab:2e6b4ffe377573",
+      "word": "工事",
+      "reading": "こうじ",
+      "meanings_ko": [
+        "공사"
+      ],
+      "source_meaning_ko": "공사",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:工",
+        "kanji:事"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 2,
+          "column": "right",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:58f64ed9ee7cf8",
+      "word": "敬語",
+      "reading": "けいご",
+      "meanings_ko": [
+        "경어"
+      ],
+      "source_meaning_ko": "경어",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:敬",
+        "kanji:語"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 2,
+          "column": "right",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:41f746b35218bc",
+      "word": "集合",
+      "reading": "しゅうごう",
+      "meanings_ko": [
+        "집합"
+      ],
+      "source_meaning_ko": "집합",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:集",
+        "kanji:合"
+      ],
+      "starred_in_book": true,
+      "source_locations": [
+        {
+          "page": 2,
+          "column": "right",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:ce193894db0e69",
+      "word": "単語",
+      "reading": "たんご",
+      "meanings_ko": [
+        "단어"
+      ],
+      "source_meaning_ko": "단어",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:単",
+        "kanji:語"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 2,
+          "column": "right",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:7a25be12d46081",
+      "word": "団子",
+      "reading": "だんご",
+      "meanings_ko": [
+        "경단"
+      ],
+      "source_meaning_ko": "경단",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:団",
+        "kanji:子"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 2,
+          "column": "right",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:f34a284bf51907",
+      "word": "削除",
+      "reading": "さくじょ",
+      "meanings_ko": [
+        "삭제"
+      ],
+      "source_meaning_ko": "삭제",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:削",
+        "kanji:除"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 2,
+          "column": "right",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:f986b459eb1c32",
+      "word": "制作",
+      "reading": "せいさく",
+      "meanings_ko": [
+        "제작"
+      ],
+      "source_meaning_ko": "제작",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:制",
+        "kanji:作"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 2,
+          "column": "right",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:0765e4a9e17859",
+      "word": "残業",
+      "reading": "ざんぎょう",
+      "meanings_ko": [
+        "잔업"
+      ],
+      "source_meaning_ko": "잔업",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:残",
+        "kanji:業"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 2,
+          "column": "right",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:c9cab24cd3d6f0",
+      "word": "存在",
+      "reading": "そんざい",
+      "meanings_ko": [
+        "존재"
+      ],
+      "source_meaning_ko": "존재",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:存",
+        "kanji:在"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 2,
+          "column": "right",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:5c209ee851b390",
+      "word": "指示",
+      "reading": "しじ",
+      "meanings_ko": [
+        "지시"
+      ],
+      "source_meaning_ko": "지시",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:指",
+        "kanji:示"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 2,
+          "column": "right",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:1692edfe490a62",
+      "word": "指導",
+      "reading": "しどう",
+      "meanings_ko": [
+        "지도"
+      ],
+      "source_meaning_ko": "지도",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:指",
+        "kanji:導"
+      ],
+      "starred_in_book": true,
+      "source_locations": [
+        {
+          "page": 2,
+          "column": "right",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:30e53ff8b67861",
+      "word": "首都",
+      "reading": "しゅと",
+      "meanings_ko": [
+        "수도"
+      ],
+      "source_meaning_ko": "수도",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:首",
+        "kanji:都"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 2,
+          "column": "right",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:ed6d55b2ea5341",
+      "word": "維持",
+      "reading": "いじ",
+      "meanings_ko": [
+        "유지"
+      ],
+      "source_meaning_ko": "유지",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:維",
+        "kanji:持"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 2,
+          "column": "right",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:1e73ff2deb21ea",
+      "word": "個人",
+      "reading": "こじん",
+      "meanings_ko": [
+        "개인"
+      ],
+      "source_meaning_ko": "개인",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:個",
+        "kanji:人"
+      ],
+      "starred_in_book": true,
+      "source_locations": [
+        {
+          "page": 2,
+          "column": "right",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:178e6d48c7e4c3",
+      "word": "文字",
+      "reading": "もじ",
+      "meanings_ko": [
+        "문자"
+      ],
+      "source_meaning_ko": "문자",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:文",
+        "kanji:字"
+      ],
+      "starred_in_book": true,
+      "source_locations": [
+        {
+          "page": 2,
+          "column": "right",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:b9f1df3f67f11c",
+      "word": "睡眠",
+      "reading": "すいみん",
+      "meanings_ko": [
+        "수면"
+      ],
+      "source_meaning_ko": "수면",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:睡",
+        "kanji:眠"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 2,
+          "column": "right",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:33987250cbc2d8",
+      "word": "数字",
+      "reading": "すうじ",
+      "meanings_ko": [
+        "숫자"
+      ],
+      "source_meaning_ko": "숫자",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:数",
+        "kanji:字"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 2,
+          "column": "right",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:3cb737198592bb",
+      "word": "合図",
+      "reading": "あいず",
+      "meanings_ko": [
+        "신호"
+      ],
+      "source_meaning_ko": "신호",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:合",
+        "kanji:図"
+      ],
+      "starred_in_book": true,
+      "source_locations": [
+        {
+          "page": 2,
+          "column": "right",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:38451dc4726111",
+      "word": "図",
+      "reading": "ず",
+      "meanings_ko": [
+        "그림"
+      ],
+      "source_meaning_ko": "그림",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:図"
+      ],
+      "starred_in_book": true,
+      "source_locations": [
+        {
+          "page": 2,
+          "column": "right",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:9e8e7e9533fc3a",
+      "word": "頭痛",
+      "reading": "ずつう",
+      "meanings_ko": [
+        "두통"
+      ],
+      "source_meaning_ko": "두통",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:頭",
+        "kanji:痛"
+      ],
+      "starred_in_book": true,
+      "source_locations": [
+        {
+          "page": 2,
+          "column": "right",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:ba05eb8ffe259c",
+      "word": "地図",
+      "reading": "ちず",
+      "meanings_ko": [
+        "지도"
+      ],
+      "source_meaning_ko": "지도",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:地",
+        "kanji:図"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 2,
+          "column": "right",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:d9c02301ffd995",
+      "word": "成績",
+      "reading": "せいせき",
+      "meanings_ko": [
+        "성적"
+      ],
+      "source_meaning_ko": "성적",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:成",
+        "kanji:績"
+      ],
+      "starred_in_book": true,
+      "source_locations": [
+        {
+          "page": 2,
+          "column": "right",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:685e15f50891bc",
+      "word": "節約",
+      "reading": "せつやく",
+      "meanings_ko": [
+        "절약"
+      ],
+      "source_meaning_ko": "절약",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:節",
+        "kanji:約"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 2,
+          "column": "right",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:cc0752d5f6569d",
+      "word": "専門家",
+      "reading": "せんもんか",
+      "meanings_ko": [
+        "전문가"
+      ],
+      "source_meaning_ko": "전문가",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:専",
+        "kanji:門",
+        "kanji:家"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 2,
+          "column": "right",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:874afffa47f7c4",
+      "word": "以前",
+      "reading": "いぜん",
+      "meanings_ko": [
+        "이전"
+      ],
+      "source_meaning_ko": "이전",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:以",
+        "kanji:前"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 3,
+          "column": "left",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:4eb2e9959530ee",
+      "word": "完全",
+      "reading": "かんぜん",
+      "meanings_ko": [
+        "완전"
+      ],
+      "source_meaning_ko": "완전",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:完",
+        "kanji:全"
+      ],
+      "starred_in_book": true,
+      "source_locations": [
+        {
+          "page": 3,
+          "column": "left",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:e8a871ddbebed7",
+      "word": "税金",
+      "reading": "ぜいきん",
+      "meanings_ko": [
+        "세금"
+      ],
+      "source_meaning_ko": "세금",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:税",
+        "kanji:金"
+      ],
+      "starred_in_book": true,
+      "source_locations": [
+        {
+          "page": 3,
+          "column": "left",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:4522af4383b57d",
+      "word": "想像",
+      "reading": "そうぞう",
+      "meanings_ko": [
+        "상상"
+      ],
+      "source_meaning_ko": "상상",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:想",
+        "kanji:像"
+      ],
+      "starred_in_book": true,
+      "source_locations": [
+        {
+          "page": 3,
+          "column": "left",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:1c11e68354bed8",
+      "word": "相談",
+      "reading": "そうだん",
+      "meanings_ko": [
+        "상담"
+      ],
+      "source_meaning_ko": "상담",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:相",
+        "kanji:談"
+      ],
+      "starred_in_book": true,
+      "source_locations": [
+        {
+          "page": 3,
+          "column": "left",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:bdd21c3b8cf772",
+      "word": "製造",
+      "reading": "せいぞう",
+      "meanings_ko": [
+        "제조"
+      ],
+      "source_meaning_ko": "제조",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:製",
+        "kanji:造"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 3,
+          "column": "left",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:6a35f68ea8ba6b",
+      "word": "増加",
+      "reading": "ぞうか",
+      "meanings_ko": [
+        "증가"
+      ],
+      "source_meaning_ko": "증가",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:増",
+        "kanji:加"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 3,
+          "column": "left",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:866e1e00306b65",
+      "word": "保存",
+      "reading": "ほぞん",
+      "meanings_ko": [
+        "보존"
+      ],
+      "source_meaning_ko": "보존",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:保",
+        "kanji:存"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 3,
+          "column": "left",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:7565a823121617",
+      "word": "連続",
+      "reading": "れんぞく",
+      "meanings_ko": [
+        "연속"
+      ],
+      "source_meaning_ko": "연속",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:連",
+        "kanji:続"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 3,
+          "column": "left",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:1842820d4e0ac4",
+      "word": "洗濯",
+      "reading": "せんたく",
+      "meanings_ko": [
+        "세탁"
+      ],
+      "source_meaning_ko": "세탁",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:洗",
+        "kanji:濯"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 3,
+          "column": "left",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:1f389cf3406207",
+      "word": "横断",
+      "reading": "おうだん",
+      "meanings_ko": [
+        "횡단"
+      ],
+      "source_meaning_ko": "횡단",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:横",
+        "kanji:断"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 3,
+          "column": "left",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:3a3b8ba10f3a2a",
+      "word": "温暖だ",
+      "reading": "おんだんだ",
+      "meanings_ko": [
+        "온난하다"
+      ],
+      "source_meaning_ko": "온난하다",
+      "part_of_speech": "na_adjective",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:温",
+        "kanji:暖"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 3,
+          "column": "left",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:fec668ca83269b",
+      "word": "手段",
+      "reading": "しゅだん",
+      "meanings_ko": [
+        "수단"
+      ],
+      "source_meaning_ko": "수단",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:手",
+        "kanji:段"
+      ],
+      "starred_in_book": true,
+      "source_locations": [
+        {
+          "page": 3,
+          "column": "left",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:ae24b857421fd1",
+      "word": "相手",
+      "reading": "あいて",
+      "meanings_ko": [
+        "상대"
+      ],
+      "source_meaning_ko": "상대",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:相",
+        "kanji:手"
+      ],
+      "starred_in_book": true,
+      "source_locations": [
+        {
+          "page": 3,
+          "column": "left",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:363e94bfb7233a",
+      "word": "指定",
+      "reading": "してい",
+      "meanings_ko": [
+        "지정"
+      ],
+      "source_meaning_ko": "지정",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:指",
+        "kanji:定"
+      ],
+      "starred_in_book": true,
+      "source_locations": [
+        {
+          "page": 3,
+          "column": "left",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:6ad7a4ab9e7949",
+      "word": "停電",
+      "reading": "ていでん",
+      "meanings_ko": [
+        "정전"
+      ],
+      "source_meaning_ko": "정전",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:停",
+        "kanji:電"
+      ],
+      "starred_in_book": true,
+      "source_locations": [
+        {
+          "page": 3,
+          "column": "left",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:dddf2d2bb5ad5a",
+      "word": "電源",
+      "reading": "でんげん",
+      "meanings_ko": [
+        "전원"
+      ],
+      "source_meaning_ko": "전원",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:電",
+        "kanji:源"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 3,
+          "column": "left",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:2659dd9a7da29e",
+      "word": "伝言",
+      "reading": "でんごん",
+      "meanings_ko": [
+        "전언"
+      ],
+      "source_meaning_ko": "전언",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:伝",
+        "kanji:言"
+      ],
+      "starred_in_book": true,
+      "source_locations": [
+        {
+          "page": 3,
+          "column": "left",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:7cb9e735ba128c",
+      "word": "伝達",
+      "reading": "でんたつ",
+      "meanings_ko": [
+        "전달"
+      ],
+      "source_meaning_ko": "전달",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:伝",
+        "kanji:達"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 3,
+          "column": "left",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:6902e87cba8e77",
+      "word": "土地",
+      "reading": "とち",
+      "meanings_ko": [
+        "토지"
+      ],
+      "source_meaning_ko": "토지",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:土",
+        "kanji:地"
+      ],
+      "starred_in_book": true,
+      "source_locations": [
+        {
+          "page": 3,
+          "column": "left",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:da7011ed4df822",
+      "word": "冷凍",
+      "reading": "れいとう",
+      "meanings_ko": [
+        "냉동"
+      ],
+      "source_meaning_ko": "냉동",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:冷",
+        "kanji:凍"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 3,
+          "column": "left",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:5659e0e01a76ca",
+      "word": "同意",
+      "reading": "どうい",
+      "meanings_ko": [
+        "동의"
+      ],
+      "source_meaning_ko": "동의",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:同",
+        "kanji:意"
+      ],
+      "starred_in_book": true,
+      "source_locations": [
+        {
+          "page": 3,
+          "column": "left",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:f5c545d53624fb",
+      "word": "独身",
+      "reading": "どくしん",
+      "meanings_ko": [
+        "독신"
+      ],
+      "source_meaning_ko": "독신",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:独",
+        "kanji:身"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 3,
+          "column": "left",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:ad5916249d63fa",
+      "word": "独立",
+      "reading": "どくりつ",
+      "meanings_ko": [
+        "독립"
+      ],
+      "source_meaning_ko": "독립",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:独",
+        "kanji:立"
+      ],
+      "starred_in_book": true,
+      "source_locations": [
+        {
+          "page": 3,
+          "column": "left",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:28be7dc41112e1",
+      "word": "努力",
+      "reading": "どりょく",
+      "meanings_ko": [
+        "노력"
+      ],
+      "source_meaning_ko": "노력",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:努",
+        "kanji:力"
+      ],
+      "starred_in_book": true,
+      "source_locations": [
+        {
+          "page": 3,
+          "column": "left",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:d4f2ae71a5db17",
+      "word": "配達",
+      "reading": "はいたつ",
+      "meanings_ko": [
+        "배달"
+      ],
+      "source_meaning_ko": "배달",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:配",
+        "kanji:達"
+      ],
+      "starred_in_book": true,
+      "source_locations": [
+        {
+          "page": 3,
+          "column": "right",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:64efd09e81bc08",
+      "word": "発売",
+      "reading": "はつばい",
+      "meanings_ko": [
+        "발매"
+      ],
+      "source_meaning_ko": "발매",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:発",
+        "kanji:売"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 3,
+          "column": "right",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:82d6ca621d3442",
+      "word": "範囲",
+      "reading": "はんい",
+      "meanings_ko": [
+        "범위"
+      ],
+      "source_meaning_ko": "범위",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:範",
+        "kanji:囲"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 3,
+          "column": "right",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:7cfcdb35a6409d",
+      "word": "看板",
+      "reading": "かんばん",
+      "meanings_ko": [
+        "간판"
+      ],
+      "source_meaning_ko": "간판",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:看",
+        "kanji:板"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 3,
+          "column": "right",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:d5661759b96a98",
+      "word": "順番",
+      "reading": "じゅんばん",
+      "meanings_ko": [
+        "순번",
+        "차례"
+      ],
+      "source_meaning_ko": "순번, 차례",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:順",
+        "kanji:番"
+      ],
+      "starred_in_book": true,
+      "source_locations": [
+        {
+          "page": 3,
+          "column": "right",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:ea36f4318cc84d",
+      "word": "売買",
+      "reading": "ばいばい",
+      "meanings_ko": [
+        "매매"
+      ],
+      "source_meaning_ko": "매매",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:売",
+        "kanji:買"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 3,
+          "column": "right",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:43bd9695b039c7",
+      "word": "失敗",
+      "reading": "しっぱい",
+      "meanings_ko": [
+        "실패",
+        "실수"
+      ],
+      "source_meaning_ko": "실패, 실수",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:失",
+        "kanji:敗"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 3,
+          "column": "right",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:bc02983425a30f",
+      "word": "心配",
+      "reading": "しんぱい",
+      "meanings_ko": [
+        "걱정"
+      ],
+      "source_meaning_ko": "걱정",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:心",
+        "kanji:配"
+      ],
+      "starred_in_book": true,
+      "source_locations": [
+        {
+          "page": 3,
+          "column": "right",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:35c9fdd8c96eb9",
+      "word": "消費",
+      "reading": "しょうひ",
+      "meanings_ko": [
+        "소비"
+      ],
+      "source_meaning_ko": "소비",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:消",
+        "kanji:費"
+      ],
+      "starred_in_book": true,
+      "source_locations": [
+        {
+          "page": 3,
+          "column": "right",
+          "section": "dakuten"
+        }
+      ]
+    },
+    {
+      "id": "vocab:47cab7bb251680",
+      "word": "一般",
+      "reading": "いっぱん",
+      "meanings_ko": [
+        "일반"
+      ],
+      "source_meaning_ko": "일반",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:一",
+        "kanji:般"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 3,
+          "column": "right",
+          "section": "sokuon"
+        }
+      ]
+    },
+    {
+      "id": "vocab:112006cfed6ad5",
+      "word": "一方",
+      "reading": "いっぽう",
+      "meanings_ko": [
+        "한쪽",
+        "한편"
+      ],
+      "source_meaning_ko": "한쪽, 한편",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:一",
+        "kanji:方"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 3,
+          "column": "right",
+          "section": "sokuon"
+        }
+      ]
+    },
+    {
+      "id": "vocab:5e7a5e08841298",
+      "word": "学科",
+      "reading": "がっか",
+      "meanings_ko": [
+        "학과"
+      ],
+      "source_meaning_ko": "학과",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:学",
+        "kanji:科"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 3,
+          "column": "right",
+          "section": "sokuon"
+        }
+      ]
+    },
+    {
+      "id": "vocab:a39f37a53417d3",
+      "word": "活気",
+      "reading": "かっき",
+      "meanings_ko": [
+        "활기"
+      ],
+      "source_meaning_ko": "활기",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:活",
+        "kanji:気"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 3,
+          "column": "right",
+          "section": "sokuon"
+        }
+      ]
+    },
+    {
+      "id": "vocab:d8f77f90cdb13c",
+      "word": "楽器",
+      "reading": "がっき",
+      "meanings_ko": [
+        "악기"
+      ],
+      "source_meaning_ko": "악기",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:楽",
+        "kanji:器"
+      ],
+      "starred_in_book": true,
+      "source_locations": [
+        {
+          "page": 3,
+          "column": "right",
+          "section": "sokuon"
+        }
+      ]
+    },
+    {
+      "id": "vocab:bb607a5f0db178",
+      "word": "各国",
+      "reading": "かっこく",
+      "meanings_ko": [
+        "각국"
+      ],
+      "source_meaning_ko": "각국",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:各",
+        "kanji:国"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 3,
+          "column": "right",
+          "section": "sokuon"
+        }
+      ]
+    },
+    {
+      "id": "vocab:c83d5546e7df71",
+      "word": "結果",
+      "reading": "けっか",
+      "meanings_ko": [
+        "결과"
+      ],
+      "source_meaning_ko": "결과",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:結",
+        "kanji:果"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 3,
+          "column": "right",
+          "section": "sokuon"
+        }
+      ]
+    },
+    {
+      "id": "vocab:e4837f7f9bfd26",
+      "word": "決心",
+      "reading": "けっしん",
+      "meanings_ko": [
+        "결심"
+      ],
+      "source_meaning_ko": "결심",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:決",
+        "kanji:心"
+      ],
+      "starred_in_book": true,
+      "source_locations": [
+        {
+          "page": 3,
+          "column": "right",
+          "section": "sokuon"
+        }
+      ]
+    },
+    {
+      "id": "vocab:6101e6bafc3e98",
+      "word": "国会",
+      "reading": "こっかい",
+      "meanings_ko": [
+        "국회"
+      ],
+      "source_meaning_ko": "국회",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:国",
+        "kanji:会"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 3,
+          "column": "right",
+          "section": "sokuon"
+        }
+      ]
+    },
+    {
+      "id": "vocab:7e8a4889a4c6d0",
+      "word": "作曲",
+      "reading": "さっきょく",
+      "meanings_ko": [
+        "작곡"
+      ],
+      "source_meaning_ko": "작곡",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:作",
+        "kanji:曲"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 3,
+          "column": "right",
+          "section": "sokuon"
+        }
+      ]
+    },
+    {
+      "id": "vocab:cbc670995c5e86",
+      "word": "実家",
+      "reading": "じっか",
+      "meanings_ko": [
+        "본가",
+        "친정"
+      ],
+      "source_meaning_ko": "본가, 친정",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:実",
+        "kanji:家"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 3,
+          "column": "right",
+          "section": "sokuon"
+        }
+      ]
+    },
+    {
+      "id": "vocab:b705d40674d4aa",
+      "word": "実験",
+      "reading": "じっけん",
+      "meanings_ko": [
+        "실험"
+      ],
+      "source_meaning_ko": "실험",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:実",
+        "kanji:験"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 3,
+          "column": "right",
+          "section": "sokuon"
+        }
+      ]
+    },
+    {
+      "id": "vocab:ebd70562c8dbd1",
+      "word": "借金",
+      "reading": "しゃっきん",
+      "meanings_ko": [
+        "차금",
+        "빚"
+      ],
+      "source_meaning_ko": "차금, 빚",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:借",
+        "kanji:金"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 3,
+          "column": "right",
+          "section": "sokuon"
+        }
+      ]
+    },
+    {
+      "id": "vocab:e0d925794141e6",
+      "word": "出身",
+      "reading": "しゅっしん",
+      "meanings_ko": [
+        "출신"
+      ],
+      "source_meaning_ko": "출신",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:出",
+        "kanji:身"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 3,
+          "column": "right",
+          "section": "sokuon"
+        }
+      ]
+    },
+    {
+      "id": "vocab:c9bda51ae64ff4",
+      "word": "出張",
+      "reading": "しゅっちょう",
+      "meanings_ko": [
+        "출장"
+      ],
+      "source_meaning_ko": "출장",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:出",
+        "kanji:張"
+      ],
+      "starred_in_book": true,
+      "source_locations": [
+        {
+          "page": 4,
+          "column": "left",
+          "section": "sokuon"
+        }
+      ]
+    },
+    {
+      "id": "vocab:7b63489460c4b9",
+      "word": "食器",
+      "reading": "しょっき",
+      "meanings_ko": [
+        "식기"
+      ],
+      "source_meaning_ko": "식기",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:食",
+        "kanji:器"
+      ],
+      "starred_in_book": true,
+      "source_locations": [
+        {
+          "page": 4,
+          "column": "left",
+          "section": "sokuon"
+        }
+      ]
+    },
+    {
+      "id": "vocab:b1070df473f53e",
+      "word": "接近",
+      "reading": "せっきん",
+      "meanings_ko": [
+        "접근"
+      ],
+      "source_meaning_ko": "접근",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:接",
+        "kanji:近"
+      ],
+      "starred_in_book": true,
+      "source_locations": [
+        {
+          "page": 4,
+          "column": "left",
+          "section": "sokuon"
+        }
+      ]
+    },
+    {
+      "id": "vocab:cf3aeadc2bf34d",
+      "word": "特急",
+      "reading": "とっきゅう",
+      "meanings_ko": [
+        "특급"
+      ],
+      "source_meaning_ko": "특급",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:特",
+        "kanji:急"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 4,
+          "column": "left",
+          "section": "sokuon"
+        }
+      ]
+    },
+    {
+      "id": "vocab:82fdcc9c649fd9",
+      "word": "日課",
+      "reading": "にっか",
+      "meanings_ko": [
+        "일과"
+      ],
+      "source_meaning_ko": "일과",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:日",
+        "kanji:課"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 4,
+          "column": "left",
+          "section": "sokuon"
+        }
+      ]
+    },
+    {
+      "id": "vocab:dafecfb76fa9b7",
+      "word": "日程",
+      "reading": "にってい",
+      "meanings_ko": [
+        "일정"
+      ],
+      "source_meaning_ko": "일정",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:日",
+        "kanji:程"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 4,
+          "column": "left",
+          "section": "sokuon"
+        }
+      ]
+    },
+    {
+      "id": "vocab:3408f29b99612b",
+      "word": "熱心",
+      "reading": "ねっしん",
+      "meanings_ko": [
+        "열심"
+      ],
+      "source_meaning_ko": "열심",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:熱",
+        "kanji:心"
+      ],
+      "starred_in_book": true,
+      "source_locations": [
+        {
+          "page": 4,
+          "column": "left",
+          "section": "sokuon"
+        }
+      ]
+    },
+    {
+      "id": "vocab:5aa2746b933bef",
+      "word": "発刊",
+      "reading": "はっかん",
+      "meanings_ko": [
+        "발간"
+      ],
+      "source_meaning_ko": "발간",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:発",
+        "kanji:刊"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 4,
+          "column": "left",
+          "section": "sokuon"
+        }
+      ]
+    },
+    {
+      "id": "vocab:5442dc355d8fad",
+      "word": "発見",
+      "reading": "はっけん",
+      "meanings_ko": [
+        "발견"
+      ],
+      "source_meaning_ko": "발견",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:発",
+        "kanji:見"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 4,
+          "column": "left",
+          "section": "sokuon"
+        }
+      ]
+    },
+    {
+      "id": "vocab:189e100e34c9c2",
+      "word": "発想",
+      "reading": "はっそう",
+      "meanings_ko": [
+        "발상"
+      ],
+      "source_meaning_ko": "발상",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:発",
+        "kanji:想"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 4,
+          "column": "left",
+          "section": "sokuon"
+        }
+      ]
+    },
+    {
+      "id": "vocab:b42f604b8b9683",
+      "word": "発達",
+      "reading": "はったつ",
+      "meanings_ko": [
+        "발달"
+      ],
+      "source_meaning_ko": "발달",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:発",
+        "kanji:達"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 4,
+          "column": "left",
+          "section": "sokuon"
+        }
+      ]
+    },
+    {
+      "id": "vocab:99002a000d37cf",
+      "word": "立派だ",
+      "reading": "りっぱだ",
+      "meanings_ko": [
+        "훌륭하다"
+      ],
+      "source_meaning_ko": "훌륭하다",
+      "part_of_speech": "na_adjective",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:立",
+        "kanji:派"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 4,
+          "column": "left",
+          "section": "sokuon"
+        }
+      ]
+    },
+    {
+      "id": "vocab:f6297eeea8d589",
+      "word": "以降",
+      "reading": "いこう",
+      "meanings_ko": [
+        "이후"
+      ],
+      "source_meaning_ko": "이후",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:以",
+        "kanji:降"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 4,
+          "column": "left",
+          "section": "sokuon"
+        }
+      ]
+    },
+    {
+      "id": "vocab:da968b874dec47",
+      "word": "応用",
+      "reading": "おうよう",
+      "meanings_ko": [
+        "응용"
+      ],
+      "source_meaning_ko": "응용",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:応",
+        "kanji:用"
+      ],
+      "starred_in_book": true,
+      "source_locations": [
+        {
+          "page": 4,
+          "column": "left",
+          "section": "sokuon"
+        }
+      ]
+    },
+    {
+      "id": "vocab:439458485f02f7",
+      "word": "共通",
+      "reading": "きょうつう",
+      "meanings_ko": [
+        "공통"
+      ],
+      "source_meaning_ko": "공통",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:共",
+        "kanji:通"
+      ],
+      "starred_in_book": true,
+      "source_locations": [
+        {
+          "page": 4,
+          "column": "left",
+          "section": "sokuon"
+        }
+      ]
+    },
+    {
+      "id": "vocab:b8d3c68256a71c",
+      "word": "興味",
+      "reading": "きょうみ",
+      "meanings_ko": [
+        "흥미"
+      ],
+      "source_meaning_ko": "흥미",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:興",
+        "kanji:味"
+      ],
+      "starred_in_book": true,
+      "source_locations": [
+        {
+          "page": 4,
+          "column": "left",
+          "section": "sokuon"
+        }
+      ]
+    },
+    {
+      "id": "vocab:97fba0da8eb164",
+      "word": "苦労",
+      "reading": "くろう",
+      "meanings_ko": [
+        "고생"
+      ],
+      "source_meaning_ko": "고생",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:苦",
+        "kanji:労"
+      ],
+      "starred_in_book": true,
+      "source_locations": [
+        {
+          "page": 4,
+          "column": "left",
+          "section": "sokuon"
+        }
+      ]
+    },
+    {
+      "id": "vocab:83274b448cf2a4",
+      "word": "効果",
+      "reading": "こうか",
+      "meanings_ko": [
+        "효과"
+      ],
+      "source_meaning_ko": "효과",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:効",
+        "kanji:果"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 4,
+          "column": "left",
+          "section": "sokuon"
+        }
+      ]
+    },
+    {
+      "id": "vocab:3eddfc12bfb9cb",
+      "word": "広告",
+      "reading": "こうこく",
+      "meanings_ko": [
+        "광고"
+      ],
+      "source_meaning_ko": "광고",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:広",
+        "kanji:告"
+      ],
+      "starred_in_book": true,
+      "source_locations": [
+        {
+          "page": 4,
+          "column": "left",
+          "section": "sokuon"
+        }
+      ]
+    },
+    {
+      "id": "vocab:c1c977acef9b8c",
+      "word": "交代",
+      "reading": "こうたい",
+      "meanings_ko": [
+        "교대"
+      ],
+      "source_meaning_ko": "교대",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:交",
+        "kanji:代"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 4,
+          "column": "left",
+          "section": "sokuon"
+        }
+      ]
+    },
+    {
+      "id": "vocab:07a64f1953e56f",
+      "word": "紅茶",
+      "reading": "こうちゃ",
+      "meanings_ko": [
+        "홍차"
+      ],
+      "source_meaning_ko": "홍차",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:紅",
+        "kanji:茶"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 4,
+          "column": "left",
+          "section": "sokuon"
+        }
+      ]
+    },
+    {
+      "id": "vocab:e4df6682f8aa98",
+      "word": "交通",
+      "reading": "こうつう",
+      "meanings_ko": [
+        "교통"
+      ],
+      "source_meaning_ko": "교통",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:交",
+        "kanji:通"
+      ],
+      "starred_in_book": true,
+      "source_locations": [
+        {
+          "page": 4,
+          "column": "left",
+          "section": "sokuon"
+        }
+      ]
+    },
+    {
+      "id": "vocab:976a40dfaef064",
+      "word": "合流",
+      "reading": "ごうりゅう",
+      "meanings_ko": [
+        "합류"
+      ],
+      "source_meaning_ko": "합류",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:合",
+        "kanji:流"
+      ],
+      "starred_in_book": true,
+      "source_locations": [
+        {
+          "page": 4,
+          "column": "right",
+          "section": "sokuon"
+        }
+      ]
+    },
+    {
+      "id": "vocab:29386f1c1c1826",
+      "word": "作業",
+      "reading": "さぎょう",
+      "meanings_ko": [
+        "작업"
+      ],
+      "source_meaning_ko": "작업",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:作",
+        "kanji:業"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 4,
+          "column": "right",
+          "section": "sokuon"
+        }
+      ]
+    },
+    {
+      "id": "vocab:842c469a7c375a",
+      "word": "時刻表",
+      "reading": "じこくひょう",
+      "meanings_ko": [
+        "(운행)시간표"
+      ],
+      "source_meaning_ko": "(운행)시간표",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:時",
+        "kanji:刻",
+        "kanji:表"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 4,
+          "column": "right",
+          "section": "sokuon"
+        }
+      ]
+    },
+    {
+      "id": "vocab:635515cbde1784",
+      "word": "事情",
+      "reading": "じじょう",
+      "meanings_ko": [
+        "사정"
+      ],
+      "source_meaning_ko": "사정",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:事",
+        "kanji:情"
+      ],
+      "starred_in_book": true,
+      "source_locations": [
+        {
+          "page": 4,
+          "column": "right",
+          "section": "sokuon"
+        }
+      ]
+    },
+    {
+      "id": "vocab:697a52c8276e0f",
+      "word": "失業",
+      "reading": "しつぎょう",
+      "meanings_ko": [
+        "실업"
+      ],
+      "source_meaning_ko": "실업",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:失",
+        "kanji:業"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 4,
+          "column": "right",
+          "section": "sokuon"
+        }
+      ]
+    },
+    {
+      "id": "vocab:b3046234287fd8",
+      "word": "授業料",
+      "reading": "じゅぎょうりょう",
+      "meanings_ko": [
+        "수업료"
+      ],
+      "source_meaning_ko": "수업료",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:授",
+        "kanji:業",
+        "kanji:料"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 4,
+          "column": "right",
+          "section": "sokuon"
+        }
+      ]
+    },
+    {
+      "id": "vocab:13408c9aa79a67",
+      "word": "主要だ",
+      "reading": "しゅようだ",
+      "meanings_ko": [
+        "주요하다"
+      ],
+      "source_meaning_ko": "주요하다",
+      "part_of_speech": "na_adjective",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:主",
+        "kanji:要"
+      ],
+      "starred_in_book": true,
+      "source_locations": [
+        {
+          "page": 4,
+          "column": "right",
+          "section": "sokuon"
+        }
+      ]
+    },
+    {
+      "id": "vocab:69a56df7b52e45",
+      "word": "使用",
+      "reading": "しよう",
+      "meanings_ko": [
+        "사용"
+      ],
+      "source_meaning_ko": "사용",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:使",
+        "kanji:用"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 4,
+          "column": "right",
+          "section": "sokuon"
+        }
+      ]
+    },
+    {
+      "id": "vocab:34c126a8e8626a",
+      "word": "商業",
+      "reading": "しょうぎょう",
+      "meanings_ko": [
+        "상업"
+      ],
+      "source_meaning_ko": "상업",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:商",
+        "kanji:業"
+      ],
+      "starred_in_book": true,
+      "source_locations": [
+        {
+          "page": 4,
+          "column": "right",
+          "section": "sokuon"
+        }
+      ]
+    },
+    {
+      "id": "vocab:18a6a4444d7022",
+      "word": "正直",
+      "reading": "しょうじき",
+      "meanings_ko": [
+        "정직"
+      ],
+      "source_meaning_ko": "정직",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:正",
+        "kanji:直"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 4,
+          "column": "right",
+          "section": "sokuon"
+        }
+      ]
+    },
+    {
+      "id": "vocab:f0601734f6f89b",
+      "word": "常識",
+      "reading": "じょうしき",
+      "meanings_ko": [
+        "상식"
+      ],
+      "source_meaning_ko": "상식",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:常",
+        "kanji:識"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 4,
+          "column": "right",
+          "section": "sokuon"
+        }
+      ]
+    },
+    {
+      "id": "vocab:2c69ff0ae0de44",
+      "word": "上達",
+      "reading": "じょうたつ",
+      "meanings_ko": [
+        "기능이 향상됨"
+      ],
+      "source_meaning_ko": "기능이 향상됨",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:上",
+        "kanji:達"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 4,
+          "column": "right",
+          "section": "sokuon"
+        }
+      ]
+    },
+    {
+      "id": "vocab:e64f2e21b11346",
+      "word": "商品",
+      "reading": "しょうひん",
+      "meanings_ko": [
+        "상품"
+      ],
+      "source_meaning_ko": "상품",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:商",
+        "kanji:品"
+      ],
+      "starred_in_book": true,
+      "source_locations": [
+        {
+          "page": 4,
+          "column": "right",
+          "section": "sokuon"
+        }
+      ]
+    },
+    {
+      "id": "vocab:2603eb7fed8415",
+      "word": "情報",
+      "reading": "じょうほう",
+      "meanings_ko": [
+        "정보"
+      ],
+      "source_meaning_ko": "정보",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:情",
+        "kanji:報"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 4,
+          "column": "right",
+          "section": "sokuon"
+        }
+      ]
+    },
+    {
+      "id": "vocab:3560627d685c32",
+      "word": "送信",
+      "reading": "そうしん",
+      "meanings_ko": [
+        "송신"
+      ],
+      "source_meaning_ko": "송신",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:送",
+        "kanji:信"
+      ],
+      "starred_in_book": true,
+      "source_locations": [
+        {
+          "page": 4,
+          "column": "right",
+          "section": "sokuon"
+        }
+      ]
+    },
+    {
+      "id": "vocab:ed399639f33a6b",
+      "word": "早退",
+      "reading": "そうたい",
+      "meanings_ko": [
+        "조퇴"
+      ],
+      "source_meaning_ko": "조퇴",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:早",
+        "kanji:退"
+      ],
+      "starred_in_book": true,
+      "source_locations": [
+        {
+          "page": 4,
+          "column": "right",
+          "section": "sokuon"
+        }
+      ]
+    },
+    {
+      "id": "vocab:94f02f20b22dbf",
+      "word": "大量",
+      "reading": "たいりょう",
+      "meanings_ko": [
+        "대량"
+      ],
+      "source_meaning_ko": "대량",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:大",
+        "kanji:量"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 4,
+          "column": "right",
+          "section": "sokuon"
+        }
+      ]
+    },
+    {
+      "id": "vocab:5fdd1a5fea2758",
+      "word": "朝刊",
+      "reading": "ちょうかん",
+      "meanings_ko": [
+        "조간"
+      ],
+      "source_meaning_ko": "조간",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:朝",
+        "kanji:刊"
+      ],
+      "starred_in_book": true,
+      "source_locations": [
+        {
+          "page": 4,
+          "column": "right",
+          "section": "sokuon"
+        }
+      ]
+    },
+    {
+      "id": "vocab:03baa4cb02d4d5",
+      "word": "調査",
+      "reading": "ちょうさ",
+      "meanings_ko": [
+        "조사"
+      ],
+      "source_meaning_ko": "조사",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:調",
+        "kanji:査"
+      ],
+      "starred_in_book": true,
+      "source_locations": [
+        {
+          "page": 4,
+          "column": "right",
+          "section": "sokuon"
+        }
+      ]
+    },
+    {
+      "id": "vocab:15327ac969d7dd",
+      "word": "到着",
+      "reading": "とうちゃく",
+      "meanings_ko": [
+        "도착"
+      ],
+      "source_meaning_ko": "도착",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:到",
+        "kanji:着"
+      ],
+      "starred_in_book": true,
+      "source_locations": [
+        {
+          "page": 4,
+          "column": "right",
+          "section": "sokuon"
+        }
+      ]
+    },
+    {
+      "id": "vocab:1f25ef493b10ba",
+      "word": "道路",
+      "reading": "どうろ",
+      "meanings_ko": [
+        "도로"
+      ],
+      "source_meaning_ko": "도로",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:道",
+        "kanji:路"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 4,
+          "column": "right",
+          "section": "sokuon"
+        }
+      ]
+    },
+    {
+      "id": "vocab:3475b06d70c87a",
+      "word": "表面",
+      "reading": "ひょうめん",
+      "meanings_ko": [
+        "표면"
+      ],
+      "source_meaning_ko": "표면",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:表",
+        "kanji:面"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 4,
+          "column": "right",
+          "section": "sokuon"
+        }
+      ]
+    },
+    {
+      "id": "vocab:66dc02c94bd5e9",
+      "word": "方向",
+      "reading": "ほうこう",
+      "meanings_ko": [
+        "방향"
+      ],
+      "source_meaning_ko": "방향",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:方",
+        "kanji:向"
+      ],
+      "starred_in_book": true,
+      "source_locations": [
+        {
+          "page": 4,
+          "column": "right",
+          "section": "sokuon"
+        }
+      ]
+    },
+    {
+      "id": "vocab:33f5640a1c5953",
+      "word": "流行",
+      "reading": "りゅうこう",
+      "meanings_ko": [
+        "유행"
+      ],
+      "source_meaning_ko": "유행",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:流",
+        "kanji:行"
+      ],
+      "starred_in_book": true,
+      "source_locations": [
+        {
+          "page": 4,
+          "column": "right",
+          "section": "sokuon"
+        }
+      ]
+    },
+    {
+      "id": "vocab:13bf12634878e7",
+      "word": "漁師",
+      "reading": "りょうし",
+      "meanings_ko": [
+        "어부"
+      ],
+      "source_meaning_ko": "어부",
+      "part_of_speech": "noun",
+      "study_level": "N3",
+      "kanji_ids": [
+        "kanji:漁",
+        "kanji:師"
+      ],
+      "starred_in_book": false,
+      "source_locations": [
+        {
+          "page": 4,
+          "column": "right",
+          "section": "sokuon"
+        }
+      ]
+    }
+  ],
+  "kanji": [
+    {
+      "id": "kanji:一",
+      "character": "一",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:47cab7bb251680",
+        "vocab:112006cfed6ad5"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:上",
+      "character": "上",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:2c71b8a7bdb412",
+        "vocab:2c69ff0ae0de44"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:下",
+      "character": "下",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:2c71b8a7bdb412"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:主",
+      "character": "主",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:13408c9aa79a67"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:予",
+      "character": "予",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:ba4c9479729c0a"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:事",
+      "character": "事",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:fafc8567e07b5c",
+        "vocab:2e6b4ffe377573",
+        "vocab:635515cbde1784"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:交",
+      "character": "交",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:c1c977acef9b8c",
+        "vocab:e4df6682f8aa98"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:人",
+      "character": "人",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:1e73ff2deb21ea"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:代",
+      "character": "代",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:c1c977acef9b8c"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:以",
+      "character": "以",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:874afffa47f7c4",
+        "vocab:f6297eeea8d589"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:会",
+      "character": "会",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:a23a91c9224b04",
+        "vocab:b6f6af791a2184",
+        "vocab:6101e6bafc3e98"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:伝",
+      "character": "伝",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:2659dd9a7da29e",
+        "vocab:7cb9e735ba128c"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:作",
+      "character": "作",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:f986b459eb1c32",
+        "vocab:7e8a4889a4c6d0",
+        "vocab:29386f1c1c1826"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:使",
+      "character": "使",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:69a56df7b52e45"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:価",
+      "character": "価",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:548f2c3307b685"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:保",
+      "character": "保",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:866e1e00306b65"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:信",
+      "character": "信",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:3560627d685c32"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:個",
+      "character": "個",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:1e73ff2deb21ea"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:借",
+      "character": "借",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:ebd70562c8dbd1"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:停",
+      "character": "停",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:6ad7a4ab9e7949"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:偶",
+      "character": "偶",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:3236e62420e368"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:像",
+      "character": "像",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:4522af4383b57d"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:全",
+      "character": "全",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:4eb2e9959530ee"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:共",
+      "character": "共",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:439458485f02f7"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:具",
+      "character": "具",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:61ef15ea3a386c"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:冷",
+      "character": "冷",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:da7011ed4df822"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:凍",
+      "character": "凍",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:da7011ed4df822"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:出",
+      "character": "出",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:e0d925794141e6",
+        "vocab:c9bda51ae64ff4"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:刊",
+      "character": "刊",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:5aa2746b933bef",
+        "vocab:5fdd1a5fea2758"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:到",
+      "character": "到",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:15327ac969d7dd"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:制",
+      "character": "制",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:f986b459eb1c32"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:刻",
+      "character": "刻",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:842c469a7c375a"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:削",
+      "character": "削",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:f34a284bf51907"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:前",
+      "character": "前",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:874afffa47f7c4"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:力",
+      "character": "力",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:28be7dc41112e1"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:加",
+      "character": "加",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:6a35f68ea8ba6b"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:努",
+      "character": "努",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:28be7dc41112e1"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:労",
+      "character": "労",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:97fba0da8eb164"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:効",
+      "character": "効",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:83274b448cf2a4"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:単",
+      "character": "単",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:ce193894db0e69"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:各",
+      "character": "各",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:94a19fe63ea4a0",
+        "vocab:bb607a5f0db178"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:合",
+      "character": "合",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:41f746b35218bc",
+        "vocab:3cb737198592bb",
+        "vocab:976a40dfaef064"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:同",
+      "character": "同",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:5659e0e01a76ca"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:向",
+      "character": "向",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:66dc02c94bd5e9"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:告",
+      "character": "告",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:3eddfc12bfb9cb"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:味",
+      "character": "味",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:b8d3c68256a71c"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:品",
+      "character": "品",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:e64f2e21b11346"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:商",
+      "character": "商",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:34c126a8e8626a",
+        "vocab:e64f2e21b11346"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:問",
+      "character": "問",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:e42c4ae9055b91"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:営",
+      "character": "営",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:edee0c731ca7ba"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:器",
+      "character": "器",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:d8f77f90cdb13c",
+        "vocab:7b63489460c4b9"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:団",
+      "character": "団",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:7a25be12d46081"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:囲",
+      "character": "囲",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:82d6ca621d3442"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:図",
+      "character": "図",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:3cb737198592bb",
+        "vocab:38451dc4726111",
+        "vocab:ba05eb8ffe259c"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:国",
+      "character": "国",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:bb607a5f0db178",
+        "vocab:6101e6bafc3e98"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:土",
+      "character": "土",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:6902e87cba8e77"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:在",
+      "character": "在",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:c9cab24cd3d6f0"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:地",
+      "character": "地",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:ba05eb8ffe259c",
+        "vocab:6902e87cba8e77"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:型",
+      "character": "型",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:4138df866b91b6"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:報",
+      "character": "報",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:2603eb7fed8415"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:増",
+      "character": "増",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:6a35f68ea8ba6b"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:売",
+      "character": "売",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:64efd09e81bc08",
+        "vocab:ea36f4318cc84d"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:外",
+      "character": "外",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:ee6418586ea0fa"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:大",
+      "character": "大",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:94f02f20b22dbf"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:失",
+      "character": "失",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:43bd9695b039c7",
+        "vocab:697a52c8276e0f"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:子",
+      "character": "子",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:7a25be12d46081"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:字",
+      "character": "字",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:178e6d48c7e4c3",
+        "vocab:33987250cbc2d8"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:存",
+      "character": "存",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:c9cab24cd3d6f0",
+        "vocab:866e1e00306b65"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:学",
+      "character": "学",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:5e7a5e08841298"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:完",
+      "character": "完",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:bf4a8bf62bf90e",
+        "vocab:4eb2e9959530ee"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:定",
+      "character": "定",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:363e94bfb7233a"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:実",
+      "character": "実",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:cbc670995c5e86",
+        "vocab:b705d40674d4aa"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:客",
+      "character": "客",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:1aeae6587e6caf"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:家",
+      "character": "家",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:61ef15ea3a386c",
+        "vocab:cc0752d5f6569d",
+        "vocab:cbc670995c5e86"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:専",
+      "character": "専",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:cc0752d5f6569d"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:導",
+      "character": "導",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:1692edfe490a62"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:工",
+      "character": "工",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:2e6b4ffe377573"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:師",
+      "character": "師",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:13bf12634878e7"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:常",
+      "character": "常",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:f0601734f6f89b"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:広",
+      "character": "広",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:3eddfc12bfb9cb"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:延",
+      "character": "延",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:93d06af3562768"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:張",
+      "character": "張",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:c9bda51ae64ff4"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:心",
+      "character": "心",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:bc02983425a30f",
+        "vocab:e4837f7f9bfd26",
+        "vocab:3408f29b99612b"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:応",
+      "character": "応",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:da968b874dec47"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:急",
+      "character": "急",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:cf3aeadc2bf34d"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:情",
+      "character": "情",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:635515cbde1784",
+        "vocab:2603eb7fed8415"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:想",
+      "character": "想",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:4522af4383b57d",
+        "vocab:189e100e34c9c2"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:意",
+      "character": "意",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:5659e0e01a76ca"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:成",
+      "character": "成",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:bf4a8bf62bf90e",
+        "vocab:d9c02301ffd995"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:手",
+      "character": "手",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:fec668ca83269b",
+        "vocab:ae24b857421fd1"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:持",
+      "character": "持",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:ed6d55b2ea5341"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:指",
+      "character": "指",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:5c209ee851b390",
+        "vocab:1692edfe490a62",
+        "vocab:363e94bfb7233a"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:授",
+      "character": "授",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:b3046234287fd8"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:接",
+      "character": "接",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:b1070df473f53e"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:改",
+      "character": "改",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:14aadd7272296f"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:敗",
+      "character": "敗",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:43bd9695b039c7"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:敬",
+      "character": "敬",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:58f64ed9ee7cf8"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:数",
+      "character": "数",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:33987250cbc2d8"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:文",
+      "character": "文",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:178e6d48c7e4c3"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:料",
+      "character": "料",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:b3046234287fd8"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:断",
+      "character": "断",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:1f389cf3406207"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:方",
+      "character": "方",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:ebc3546d9b4e8e",
+        "vocab:112006cfed6ad5",
+        "vocab:66dc02c94bd5e9"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:日",
+      "character": "日",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:82fdcc9c649fd9",
+        "vocab:dafecfb76fa9b7"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:早",
+      "character": "早",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:ed399639f33a6b"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:時",
+      "character": "時",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:842c469a7c375a"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:暖",
+      "character": "暖",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:3a3b8ba10f3a2a"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:曲",
+      "character": "曲",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:7e8a4889a4c6d0"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:月",
+      "character": "月",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:f1ffc2eb4e34db"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:朝",
+      "character": "朝",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:5fdd1a5fea2758"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:期",
+      "character": "期",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:93d06af3562768"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:末",
+      "character": "末",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:f1ffc2eb4e34db"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:札",
+      "character": "札",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:14aadd7272296f"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:板",
+      "character": "板",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:7cfcdb35a6409d"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:果",
+      "character": "果",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:c83d5546e7df71",
+        "vocab:83274b448cf2a4"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:査",
+      "character": "査",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:03baa4cb02d4d5"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:格",
+      "character": "格",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:548f2c3307b685"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:械",
+      "character": "械",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:78da824a5ad4a0"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:業",
+      "character": "業",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:0765e4a9e17859",
+        "vocab:29386f1c1c1826",
+        "vocab:697a52c8276e0f",
+        "vocab:b3046234287fd8",
+        "vocab:34c126a8e8626a"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:楽",
+      "character": "楽",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:d8f77f90cdb13c"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:横",
+      "character": "横",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:1f389cf3406207"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:機",
+      "character": "機",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:78da824a5ad4a0"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:正",
+      "character": "正",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:18a6a4444d7022"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:残",
+      "character": "残",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:0765e4a9e17859"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:段",
+      "character": "段",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:fec668ca83269b"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:気",
+      "character": "気",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:6e8bbfc718e4cd",
+        "vocab:a39f37a53417d3"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:決",
+      "character": "決",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:e4837f7f9bfd26"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:洗",
+      "character": "洗",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:1842820d4e0ac4"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:活",
+      "character": "活",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:a39f37a53417d3"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:派",
+      "character": "派",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:99002a000d37cf"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:流",
+      "character": "流",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:976a40dfaef064",
+        "vocab:33f5640a1c5953"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:消",
+      "character": "消",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:35c9fdd8c96eb9"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:液",
+      "character": "液",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:4138df866b91b6"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:温",
+      "character": "温",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:6e8bbfc718e4cd",
+        "vocab:3a3b8ba10f3a2a"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:源",
+      "character": "源",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:dddf2d2bb5ad5a"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:漁",
+      "character": "漁",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:13bf12634878e7"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:濯",
+      "character": "濯",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:1842820d4e0ac4"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:然",
+      "character": "然",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:3236e62420e368"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:熱",
+      "character": "熱",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:3408f29b99612b"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:特",
+      "character": "特",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:cf3aeadc2bf34d"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:独",
+      "character": "独",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:f5c545d53624fb",
+        "vocab:ad5916249d63fa"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:現",
+      "character": "現",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:bdd6ed48d33641"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:用",
+      "character": "用",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:da968b874dec47",
+        "vocab:69a56df7b52e45"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:画",
+      "character": "画",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:b364674df101a3"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:番",
+      "character": "番",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:d5661759b96a98"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:疑",
+      "character": "疑",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:e42c4ae9055b91"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:痛",
+      "character": "痛",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:9e8e7e9533fc3a"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:発",
+      "character": "発",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:64efd09e81bc08",
+        "vocab:5aa2746b933bef",
+        "vocab:5442dc355d8fad",
+        "vocab:189e100e34c9c2",
+        "vocab:b42f604b8b9683"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:直",
+      "character": "直",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:18a6a4444d7022"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:相",
+      "character": "相",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:1c11e68354bed8",
+        "vocab:ae24b857421fd1"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:看",
+      "character": "看",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:7cfcdb35a6409d"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:眠",
+      "character": "眠",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:b9f1df3f67f11c"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:着",
+      "character": "着",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:15327ac969d7dd"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:睡",
+      "character": "睡",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:b9f1df3f67f11c"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:示",
+      "character": "示",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:5c209ee851b390"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:科",
+      "character": "科",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:ee6418586ea0fa",
+        "vocab:5e7a5e08841298"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:程",
+      "character": "程",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:dafecfb76fa9b7"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:税",
+      "character": "税",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:e8a871ddbebed7"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:立",
+      "character": "立",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:ad5916249d63fa",
+        "vocab:99002a000d37cf"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:節",
+      "character": "節",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:685e15f50891bc"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:範",
+      "character": "範",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:82d6ca621d3442"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:約",
+      "character": "約",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:ba4c9479729c0a",
+        "vocab:685e15f50891bc"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:紅",
+      "character": "紅",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:07a64f1953e56f"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:経",
+      "character": "経",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:edee0c731ca7ba"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:結",
+      "character": "結",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:c83d5546e7df71"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:続",
+      "character": "続",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:7565a823121617"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:維",
+      "character": "維",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:ed6d55b2ea5341"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:練",
+      "character": "練",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:9ad6125d3b4b72"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:績",
+      "character": "績",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:d9c02301ffd995"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:義",
+      "character": "義",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:b1f98609ded780"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:興",
+      "character": "興",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:b8d3c68256a71c"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:般",
+      "character": "般",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:47cab7bb251680"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:苦",
+      "character": "苦",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:97fba0da8eb164"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:茶",
+      "character": "茶",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:07a64f1953e56f"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:血",
+      "character": "血",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:4138df866b91b6"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:行",
+      "character": "行",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:fafc8567e07b5c",
+        "vocab:33f5640a1c5953"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:表",
+      "character": "表",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:842c469a7c375a",
+        "vocab:3475b06d70c87a"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:製",
+      "character": "製",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:bdd21c3b8cf772"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:要",
+      "character": "要",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:13408c9aa79a67"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:見",
+      "character": "見",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:5442dc355d8fad"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:観",
+      "character": "観",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:1aeae6587e6caf"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:角",
+      "character": "角",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:ebc3546d9b4e8e"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:言",
+      "character": "言",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:2659dd9a7da29e"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:計",
+      "character": "計",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:b6f6af791a2184"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:訓",
+      "character": "訓",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:9ad6125d3b4b72"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:語",
+      "character": "語",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:58f64ed9ee7cf8",
+        "vocab:ce193894db0e69"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:課",
+      "character": "課",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:82fdcc9c649fd9"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:調",
+      "character": "調",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:03baa4cb02d4d5"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:談",
+      "character": "談",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:1c11e68354bed8"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:講",
+      "character": "講",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:b1f98609ded780"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:識",
+      "character": "識",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:f0601734f6f89b"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:議",
+      "character": "議",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:a23a91c9224b04"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:象",
+      "character": "象",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:bdd6ed48d33641"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:買",
+      "character": "買",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:ea36f4318cc84d"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:費",
+      "character": "費",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:35c9fdd8c96eb9"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:路",
+      "character": "路",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:1f25ef493b10ba"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:身",
+      "character": "身",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:f5c545d53624fb",
+        "vocab:e0d925794141e6"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:近",
+      "character": "近",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:b1070df473f53e"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:退",
+      "character": "退",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:ed399639f33a6b"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:送",
+      "character": "送",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:3560627d685c32"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:通",
+      "character": "通",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:439458485f02f7",
+        "vocab:e4df6682f8aa98"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:造",
+      "character": "造",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:bdd21c3b8cf772"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:連",
+      "character": "連",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:7565a823121617"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:道",
+      "character": "道",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:1f25ef493b10ba"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:達",
+      "character": "達",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:7cb9e735ba128c",
+        "vocab:d4f2ae71a5db17",
+        "vocab:b42f604b8b9683",
+        "vocab:2c69ff0ae0de44"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:都",
+      "character": "都",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:30e53ff8b67861"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:配",
+      "character": "配",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:d4f2ae71a5db17",
+        "vocab:bc02983425a30f"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:量",
+      "character": "量",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:94f02f20b22dbf"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:金",
+      "character": "金",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:e8a871ddbebed7",
+        "vocab:ebd70562c8dbd1"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:録",
+      "character": "録",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:b364674df101a3"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:門",
+      "character": "門",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:cc0752d5f6569d"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:降",
+      "character": "降",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:f6297eeea8d589"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:除",
+      "character": "除",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:f34a284bf51907"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:集",
+      "character": "集",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:41f746b35218bc"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:電",
+      "character": "電",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:6ad7a4ab9e7949",
+        "vocab:dddf2d2bb5ad5a"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:面",
+      "character": "面",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:3475b06d70c87a"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:順",
+      "character": "順",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:d5661759b96a98"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:頭",
+      "character": "頭",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:9e8e7e9533fc3a"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:食",
+      "character": "食",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:7b63489460c4b9"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:首",
+      "character": "首",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:30e53ff8b67861"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:駅",
+      "character": "駅",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:94a19fe63ea4a0"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    },
+    {
+      "id": "kanji:験",
+      "character": "験",
+      "korean_hun": null,
+      "korean_eum": null,
+      "onyomi": null,
+      "kunyomi": null,
+      "meanings_ko": null,
+      "vocabulary_ids": [
+        "vocab:b705d40674d4aa"
+      ],
+      "metadata_status": "needs_verified_dictionary",
+      "metadata_source": null
+    }
+  ]
+}

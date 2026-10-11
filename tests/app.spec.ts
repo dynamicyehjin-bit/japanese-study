@@ -52,17 +52,23 @@ test("mobile quiz, history, wrong notes, favorites, import, merge, backup and re
       () => document.documentElement.scrollWidth <= innerWidth,
     ),
   ).toBe(true);
+  for (const v of await getRecords(page, "vocabulary")) {
+    answers[String(v.word)] = String(v.reading);
+    meanings[String(v.word)] = (v.meanings_ko as string[]).join(", ");
+  }
   await page.screenshot({ path: "/tmp/kotoba-mobile.png", fullPage: true });
   await page.getByRole("button", { name: "학습 시작하기" }).click();
-  for (let i = 0; i < 6; i++) {
+  for (let i = 0; i < 10; i++) {
     const word = (await page.locator(".question-word>span").textContent())!;
     const reading = (await page
       .locator(".quiz-heading h1")
       .textContent())!.includes("읽을");
     const right = (reading ? answers : meanings)[word];
     const buttons = page.locator(".option");
-    const texts = await buttons.allTextContents();
-    const correct = texts.findIndex((v) => v.includes(right));
+    const texts = await page
+      .locator(".option > span:nth-child(2)")
+      .allTextContents();
+    const correct = texts.findIndex((v) => v === right);
     if (i === 0)
       await page
         .getByRole("button", { name: "즐겨찾기 추가", exact: true })
@@ -75,13 +81,13 @@ test("mobile quiz, history, wrong notes, favorites, import, merge, backup and re
     // Save must occur once even if checking is retried rapidly.
     await expect(
       page.getByRole("button", {
-        name: i === 5 ? "결과 보기" : "다음 문제",
+        name: i === 9 ? "결과 보기" : "다음 문제",
         exact: true,
       }),
     ).toBeVisible();
     await page
       .getByRole("button", {
-        name: i === 5 ? "결과 보기" : "다음 문제",
+        name: i === 9 ? "결과 보기" : "다음 문제",
         exact: true,
       })
       .click();
@@ -89,13 +95,13 @@ test("mobile quiz, history, wrong notes, favorites, import, merge, backup and re
   await expect(
     page.getByRole("heading", { name: "오늘도 한 걸음 성장했어요!" }),
   ).toBeVisible();
-  expect(await getRecords(page, "history")).toHaveLength(6);
+  expect(await getRecords(page, "history")).toHaveLength(10);
   const progress = await getRecords(page, "progress");
-  expect(progress.reduce((n, p) => n + Number(p.correct_count), 0)).toBe(4);
+  expect(progress.reduce((n, p) => n + Number(p.correct_count), 0)).toBe(8);
   expect(progress.reduce((n, p) => n + Number(p.wrong_count), 0)).toBe(2);
   await page.getByRole("button", { name: "홈으로 돌아가기" }).click();
   await page.reload();
-  await expect(page.locator(".stat-card").first()).toContainText("6");
+  await expect(page.locator(".stat-card").first()).toContainText("10");
   await nav(page, "오답노트");
   await expect(page.locator(".word-card")).toHaveCount(2);
   await page.getByRole("button", { name: "오답 단어 복습" }).click();
@@ -104,8 +110,10 @@ test("mobile quiz, history, wrong notes, favorites, import, merge, backup and re
     .locator(".quiz-heading h1")
     .textContent())!.includes("읽을");
   const right = (reading ? answers : meanings)[wrongWord];
-  const options = await page.locator(".option").allTextContents();
-  const idx = options.findIndex((s) => s.includes(right));
+  const options = await page
+    .locator(".option > span:nth-child(2)")
+    .allTextContents();
+  const idx = options.findIndex((s) => s === right);
   await page
     .locator(".option")
     .nth((idx + 1) % 4)
@@ -124,7 +132,11 @@ test("mobile quiz, history, wrong notes, favorites, import, merge, backup and re
     .click();
   await expect(page.locator(".word-card")).toHaveCount(0);
   await nav(page, "단어장");
-  await page.locator(".word-main").first().click();
+  await page
+    .locator(".word-card")
+    .filter({ hasText: "変更" })
+    .locator(".word-main")
+    .click();
   await expect(page.getByRole("dialog")).toBeVisible();
   await page.getByRole("dialog").locator(".kanji-pills button").first().click();
   await expect(page.getByRole("dialog")).toContainText("음독");
@@ -141,8 +153,8 @@ test("mobile quiz, history, wrong notes, favorites, import, merge, backup and re
       '[{"word":"変更","reading":"へんこう","meanings_ko":["변경","변화"]}]',
     );
   await page.getByRole("button", { name: "검증하고 가져오기" }).click();
-  await expect(page.getByRole("status")).toContainText("기존 단어 1개 병합");
-  expect(await getRecords(page, "history")).toHaveLength(7);
+  await expect(page.locator(".inline-success")).toContainText("새 단어 0개");
+  expect(await getRecords(page, "history")).toHaveLength(11);
   // Synthetic import fixture lives only in the isolated test browser.
   await page
     .getByLabel("데이터 내용")
@@ -150,7 +162,7 @@ test("mobile quiz, history, wrong notes, favorites, import, merge, backup and re
       '[{"word":"変更する","reading":"へんこうする","meanings_ko":["변경하다"]}]',
     );
   await page.getByRole("button", { name: "검증하고 가져오기" }).click();
-  await expect(page.getByRole("status")).toContainText("새 단어 1개 추가");
+  await expect(page.locator(".inline-success")).toContainText("새 단어 1개");
   await page
     .getByLabel("데이터 내용")
     .fill('[{"word":"","reading":"へんこう","meanings_ko":["변경"]}]');
@@ -161,7 +173,7 @@ test("mobile quiz, history, wrong notes, favorites, import, merge, backup and re
   const download = await downloadPromise;
   const file = await download.path();
   const backup = JSON.parse(await readFile(file!, "utf8"));
-  expect(backup.history).toHaveLength(7);
+  expect(backup.history).toHaveLength(11);
   expect(
     backup.progress.some((p: { is_favorite: boolean }) => p.is_favorite),
   ).toBe(true);
@@ -173,7 +185,7 @@ test("mobile quiz, history, wrong notes, favorites, import, merge, backup and re
     page.getByRole("status").filter({ hasText: "백업 복원 완료" }),
   ).toBeVisible();
   await page.reload();
-  expect(await getRecords(page, "history")).toHaveLength(7);
+  expect(await getRecords(page, "history")).toHaveLength(11);
 });
 test("installed service worker supports offline reload and new learning records", async ({
   page,
@@ -212,4 +224,149 @@ test("desktop layout has no overflow", async ({ page }) => {
     ),
   ).toBe(true);
   await page.screenshot({ path: "/tmp/kotoba-desktop.png", fullPage: true });
+});
+
+test("version 1 browser upgrade preserves user records and registers book data once", async ({
+  page,
+}) => {
+  await page.goto("/icon.svg");
+  await page.evaluate(async () => {
+    const request = indexedDB.open("kotoba-n3", 10);
+    const database = await new Promise<IDBDatabase>((resolve, reject) => {
+      request.onupgradeneeded = () => {
+        const d = request.result;
+        const k = d.createObjectStore("kanji", { keyPath: "id" });
+        k.createIndex("character", "character", { unique: true });
+        const v = d.createObjectStore("vocabulary", { keyPath: "id" });
+        v.createIndex("word", "word", { unique: true });
+        const h = d.createObjectStore("history", {
+          keyPath: "id",
+          autoIncrement: true,
+        });
+        h.createIndex("[item_type+item_id]", ["item_type", "item_id"]);
+        h.createIndex("studied_at", "studied_at");
+        const p = d.createObjectStore("progress", {
+          keyPath: ["item_type", "item_id"],
+        });
+        p.createIndex("item_type", "item_type");
+        p.createIndex("item_id", "item_id");
+      };
+      request.onsuccess = () => resolve(request.result);
+      request.onerror = () => reject(request.error);
+    });
+    const tx = database.transaction(
+      ["kanji", "vocabulary", "history", "progress"],
+      "readwrite",
+    );
+    const words = [
+      ["変更", "へんこう", "변경"],
+      ["断る", "ことわる", "거절하다"],
+      ["関係", "かんけい", "관계"],
+      ["予定", "よてい", "예정"],
+      ["必要", "ひつよう", "필요"],
+      ["間に合う", "まにあう", "시간에 맞다"],
+    ];
+    const chars = [
+      ...new Set(
+        words.flatMap(([word]) => word.match(/\p{Script=Han}/gu) ?? []),
+      ),
+    ];
+    chars.forEach((character) =>
+      tx
+        .objectStore("kanji")
+        .add({
+          id: `k:${character}`,
+          character,
+          korean_hun: "",
+          korean_eum: "",
+          onyomi: [],
+          kunyomi: [],
+          meanings_ko: [],
+        }),
+    );
+    words.forEach(([word, reading, meaning]) =>
+      tx
+        .objectStore("vocabulary")
+        .add({
+          id: `v:${word}`,
+          word,
+          reading,
+          meanings_ko: [meaning],
+          kanji_ids: (word.match(/\p{Script=Han}/gu) ?? []).map(
+            (c) => `k:${c}`,
+          ),
+        }),
+    );
+    const date = new Date().toISOString();
+    tx.objectStore("history").add({
+      id: 1,
+      item_type: "vocabulary",
+      item_id: "v:変更",
+      question_type: "reading",
+      selected_answer: "wrong",
+      is_correct: false,
+      studied_at: date,
+    });
+    tx.objectStore("progress").add({
+      item_type: "vocabulary",
+      item_id: "v:変更",
+      correct_count: 0,
+      wrong_count: 1,
+      last_studied_at: date,
+      next_review_at: date,
+      is_favorite: true,
+    });
+    tx.objectStore("progress").add({
+      item_type: "kanji",
+      item_id: "k:予",
+      correct_count: 0,
+      wrong_count: 0,
+      last_studied_at: null,
+      next_review_at: null,
+      is_favorite: true,
+    });
+    await new Promise<void>((resolve, reject) => {
+      tx.oncomplete = () => resolve();
+      tx.onerror = () => reject(tx.error);
+    });
+    database.close();
+  });
+  await page.goto("/");
+  await expect(
+    page.getByRole("heading", { name: "오늘도, 한 단어씩" }),
+  ).toBeVisible();
+  expect(await getRecords(page, "vocabulary")).toHaveLength(150);
+  expect(await getRecords(page, "kanji")).toHaveLength(227);
+  expect(await getRecords(page, "history")).toHaveLength(1);
+  const progress = await getRecords(page, "progress");
+  expect(progress).toHaveLength(2);
+  expect(progress.every((p) => p.is_favorite === true)).toBe(true);
+  const v = (await getRecords(page, "vocabulary")).find(
+    (v) => v.word === "改札",
+  )!;
+  expect(v.starred_in_book).toBe(true);
+  expect(v.kanji_ids).toEqual(["k:改", "k:札"]);
+  const k = (await getRecords(page, "kanji")).find(
+    (k) => k.character === "改",
+  )!;
+  expect(k.onyomi).toBeNull();
+  expect(k.korean_hun).toBeNull();
+  await nav(page, "데이터");
+  await expect(page.getByRole("status")).toContainText(
+    "새 단어 144개 · 새 한자 216개 · 중복 5개 · 오류 0개",
+  );
+  await nav(page, "단어장");
+  await page.getByLabel("단어 검색").fill("改札");
+  await page.locator(".word-main").click();
+  await expect(page.getByRole("dialog")).toContainText("교재 별표 단어");
+  await expect(
+    page
+      .getByRole("dialog")
+      .getByRole("button", { name: "즐겨찾기 추가", exact: true }),
+  ).toHaveAttribute("aria-pressed", "false");
+  await page.getByRole("button", { name: "상세 닫기" }).click();
+  await page.reload();
+  expect(await getRecords(page, "vocabulary")).toHaveLength(150);
+  expect(await getRecords(page, "history")).toHaveLength(1);
+  expect(await getRecords(page, "progress")).toEqual(progress);
 });

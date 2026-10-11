@@ -4,13 +4,16 @@ export type Mode = QuestionType | "mixed";
 export interface Kanji {
   id: string;
   character: string;
-  korean_hun: string;
-  korean_eum: string;
-  onyomi: string[];
-  kunyomi: string[];
-  meanings_ko: string[];
+  korean_hun: string | null;
+  korean_eum: string | null;
+  onyomi: string[] | null;
+  kunyomi: string[] | null;
+  meanings_ko: string[] | null;
   jlpt_level?: string;
   source?: string;
+  source_id?: string;
+  metadata_status?: string;
+  metadata_source?: string | null;
 }
 export interface Vocabulary {
   id: string;
@@ -20,6 +23,11 @@ export interface Vocabulary {
   kanji_ids: string[];
   jlpt_level?: string;
   source?: string;
+  source_id?: string;
+  starred_in_book?: boolean;
+  part_of_speech?: string;
+  source_meaning_ko?: string;
+  source_locations?: { page: number; column: string; section: string }[];
 }
 export interface StudyHistory {
   id?: number;
@@ -55,4 +63,18 @@ export interface Question {
   type: QuestionType;
   options: string[];
   answer: string;
+}
+
+export interface ImportReport {
+  added: number;
+  updated: number;
+  kanji_added: number;
+  kanji_updated: number;
+  duplicates: number;
+  errors: string[];
+}
+export interface DatasetRegistration {
+  key: string;
+  registered_at: string;
+  report: ImportReport;
 }

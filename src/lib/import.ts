@@ -31,10 +31,13 @@ function strings(value: unknown, field: string, required = false): string[] {
 }
 function optionalMetadata(o: Record<string, unknown>) {
   return {
-    ...(o.jlpt_level === undefined
+    ...((o.jlpt_level ?? o.study_level) === undefined
       ? {}
-      : { jlpt_level: string(o.jlpt_level, "jlpt_level") }),
+      : { jlpt_level: string(o.jlpt_level ?? o.study_level, "jlpt_level") }),
     ...(o.source === undefined ? {} : { source: string(o.source, "source") }),
+    ...(o.source_id === undefined && o.id === undefined
+      ? {}
+      : { source_id: string(o.source_id ?? o.id, "source_id") }),
   };
 }
 function unique<T>(rows: T[], key: (v: T) => string, label: string) {
@@ -45,7 +48,11 @@ function unique<T>(rows: T[], key: (v: T) => string, label: string) {
     );
 }
 export function parseDataset(input: unknown): Dataset {
-  const root = Array.isArray(input) ? { vocabulary: input } : object(input);
+  const root: Record<string, unknown> = Array.isArray(input)
+    ? { vocabulary: input }
+    : { ...object(input) };
+  if (root.vocabulary === undefined && Array.isArray(root.kanji))
+    root.vocabulary = [];
   if (!Array.isArray(root.vocabulary))
     throw new Error("vocabulary 배열 또는 단어 배열이 필요합니다.");
   if (root.kanji !== undefined && !Array.isArray(root.kanji))
@@ -57,16 +64,39 @@ export function parseDataset(input: unknown): Dataset {
     if (!/^\p{Script=Han}$/u.test(character))
       throw new Error("character는 한자 한 글자여야 합니다.");
     const id = kanjiId(character);
-    if (o.id !== undefined) aliases.set(string(o.id, "id"), id);
+    if (o.id !== undefined) {
+      const alias = string(o.id, "id");
+      if (aliases.has(alias)) throw new Error(`중복 한자 ID: ${alias}`);
+      aliases.set(alias, id);
+    }
+    aliases.set(id, id);
     return {
       id,
       character,
-      korean_hun: string(o.korean_hun, "korean_hun", false),
-      korean_eum: string(o.korean_eum, "korean_eum", false),
-      onyomi: strings(o.onyomi, "onyomi"),
-      kunyomi: strings(o.kunyomi, "kunyomi"),
-      meanings_ko: strings(o.meanings_ko, "meanings_ko"),
+      korean_hun:
+        o.korean_hun === null
+          ? null
+          : string(o.korean_hun, "korean_hun", false),
+      korean_eum:
+        o.korean_eum === null
+          ? null
+          : string(o.korean_eum, "korean_eum", false),
+      onyomi: o.onyomi === null ? null : strings(o.onyomi, "onyomi"),
+      kunyomi: o.kunyomi === null ? null : strings(o.kunyomi, "kunyomi"),
+      meanings_ko:
+        o.meanings_ko === null ? null : strings(o.meanings_ko, "meanings_ko"),
       ...optionalMetadata(o),
+      ...(o.metadata_status === undefined
+        ? {}
+        : { metadata_status: string(o.metadata_status, "metadata_status") }),
+      ...(o.metadata_source === undefined
+        ? {}
+        : {
+            metadata_source:
+              o.metadata_source === null
+                ? null
+                : string(o.metadata_source, "metadata_source"),
+          }),
     };
   });
   const vocabulary: Vocabulary[] = root.vocabulary.map((row, i) => {
@@ -78,18 +108,70 @@ export function parseDataset(input: unknown): Dataset {
       `단어 ${i + 1} meanings_ko`,
       true,
     );
-    if (o.kanji_ids !== undefined) {
-      for (const id of strings(o.kanji_ids, "kanji_ids"))
-        if (!aliases.has(id) && !characters(word).map(kanjiId).includes(id))
-          throw new Error(`단어 ${word}: 연결된 한자 ID를 찾을 수 없습니다.`);
-    }
+    const linkedIds =
+      o.kanji_ids === undefined
+        ? characters(word).map(kanjiId)
+        : strings(o.kanji_ids, "kanji_ids").map((externalId) => {
+            const id =
+              aliases.get(externalId) ??
+              (characters(word).map(kanjiId).includes(externalId)
+                ? externalId
+                : undefined);
+            if (!id)
+              throw new Error(
+                `단어 ${word}: 연결된 한자 ID ${externalId}를 찾을 수 없습니다.`,
+              );
+            if (!characters(word).map(kanjiId).includes(id))
+              throw new Error(
+                `단어 ${word}: 구성 한자와 연결 ID가 일치하지 않습니다.`,
+              );
+            return id;
+          });
+    if (
+      o.starred_in_book !== undefined &&
+      typeof o.starred_in_book !== "boolean"
+    )
+      throw new Error(`단어 ${word}: starred_in_book은 boolean이어야 합니다.`);
+    const locations =
+      o.source_locations === undefined
+        ? undefined
+        : (() => {
+            if (!Array.isArray(o.source_locations))
+              throw new Error("source_locations는 배열이어야 합니다.");
+            return o.source_locations.map((value) => {
+              const r = object(value);
+              if (
+                typeof r.page !== "number" ||
+                !Number.isSafeInteger(r.page) ||
+                r.page < 1
+              )
+                throw new Error("page는 양수 정수여야 합니다.");
+              return {
+                page: r.page,
+                column: string(r.column, "column"),
+                section: string(r.section, "section"),
+              };
+            });
+          })();
     return {
       id: vocabularyId(word),
       word,
       reading,
       meanings_ko,
-      kanji_ids: characters(word).map(kanjiId),
+      kanji_ids: [...new Set(linkedIds)],
       ...optionalMetadata(o),
+      ...(o.starred_in_book === undefined
+        ? {}
+        : { starred_in_book: o.starred_in_book as boolean }),
+      ...(o.part_of_speech === undefined
+        ? {}
+        : { part_of_speech: string(o.part_of_speech, "part_of_speech") }),
+      ...(o.source_meaning_ko === undefined
+        ? {}
+        : {
+            source_meaning_ko: string(o.source_meaning_ko, "source_meaning_ko"),
+          }),
+      ...(locations === undefined ? {} : { source_locations: locations }),
     };
   });
   unique(vocabulary, (v) => v.word, "단어 데이터");
@@ -109,6 +191,12 @@ export function parseDataset(input: unknown): Dataset {
       });
   if (!vocabulary.length && !kanji.length)
     throw new Error("가져올 데이터가 없습니다.");
+  const sourceTitle =
+    root.source && typeof root.source === "object" && "title" in root.source
+      ? string(root.source.title, "source.title")
+      : undefined;
+  if (sourceTitle)
+    for (const item of [...kanji, ...vocabulary]) item.source ??= sourceTitle;
   return { kanji, vocabulary };
 }
 export function parseCSV(text: string): Dataset {

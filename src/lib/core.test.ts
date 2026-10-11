@@ -15,7 +15,7 @@ import { seed } from "./seed";
 beforeEach(async () => {
   db.close();
   await db.delete();
-  await initialize();
+  await initialize({ includeBundled: false });
 });
 afterAll(async () => {
   db.close();
@@ -92,7 +92,7 @@ describe("데이터 검증 및 병합", () => {
     await recordAnswer(answer(false));
     await toggleFavorite("vocabulary", seed.vocabulary[0].id);
     const updated = { ...seed.vocabulary[0], meanings_ko: ["변경", "변화"] };
-    expect(await mergeDataset(parseDataset([updated]))).toEqual({
+    expect(await mergeDataset(parseDataset([updated]))).toMatchObject({
       added: 0,
       updated: 1,
     });
