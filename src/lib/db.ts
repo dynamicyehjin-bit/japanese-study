@@ -47,9 +47,13 @@ export const emptyProgress = (
   next_review_at: null,
   is_favorite: false,
 });
-export async function initialize(options: { includeBundled?: boolean } = {}) {
+export async function initialize(
+  options: { includeBundled?: boolean; includeDictionary?: boolean } = {},
+) {
   await db.open();
   if (options.includeBundled !== false) await registerBundledDataset();
+  if ((options.includeDictionary ?? options.includeBundled) !== false)
+    await registerKanjiDictionary();
 }
 export const bundledKey = `dataset:${bundledDataset.dataset_id}:${bundledDataset.schema_version}`;
 export async function registerBundledDataset(): Promise<ImportReport> {
@@ -70,6 +74,79 @@ export async function registerBundledDataset(): Promise<ImportReport> {
       return report;
     },
   );
+}
+export const dictionaryKey = "dictionary:kanji-dictionary-2026-10-12:1.0.0";
+const same = (a: unknown, b: unknown) =>
+  JSON.stringify(a) === JSON.stringify(b);
+export async function registerKanjiDictionary(): Promise<ImportReport> {
+  const { default: raw } = await import("../data/kanji-dictionary.json");
+  const dictionary = parseDataset(raw);
+  return db.transaction("rw", db.kanji, db.metadata, async () => {
+    const registration = await db.metadata.get(dictionaryKey);
+    if (registration) return registration.report;
+    const report: ImportReport = {
+      added: 0,
+      updated: 0,
+      kanji_added: 0,
+      kanji_updated: 0,
+      duplicates: 0,
+      errors: [],
+    };
+    for (const entry of dictionary.kanji) {
+      const old = await db.kanji
+        .where("character")
+        .equals(entry.character)
+        .first();
+      // Supplement only existing records; never resurrect items removed by a backup restore.
+      if (!old) continue;
+      const next: Kanji = { ...old };
+      for (const field of ["korean_hun", "korean_eum"] as const)
+        if (!next[field]) next[field] = entry[field];
+      for (const field of ["onyomi", "kunyomi", "meanings_ko"] as const)
+        if (!next[field]?.length) next[field] = entry[field];
+      const koreanMatches =
+        next.korean_hun === entry.korean_hun &&
+        next.korean_eum === entry.korean_eum &&
+        (!old.korean_readings?.length ||
+          same(old.korean_readings, entry.korean_readings)) &&
+        (!old.korean_reference_character ||
+          old.korean_reference_character === entry.korean_reference_character);
+      const japaneseMatches =
+        same(next.onyomi, entry.onyomi) && same(next.kunyomi, entry.kunyomi);
+      if (koreanMatches) {
+        next.korean_readings ??= entry.korean_readings;
+        next.korean_reference_character ??= entry.korean_reference_character;
+      }
+      const sources = (entry.metadata_sources ?? []).filter((source) =>
+        source.field === "japanese_readings" ? japaneseMatches : koreanMatches,
+      );
+      next.metadata_sources = [...(old.metadata_sources ?? [])];
+      for (const source of sources)
+        if (
+          !next.metadata_sources.some(
+            (s) => s.url === source.url && s.field === source.field,
+          )
+        )
+          next.metadata_sources.push(source);
+      next.metadata_source = [
+        old.metadata_source,
+        ...sources.map((s) => s.label),
+      ]
+        .filter((v, i, a) => v && a.indexOf(v) === i)
+        .join(" · ");
+      next.metadata_verified_at = entry.metadata_verified_at;
+      next.metadata_status =
+        koreanMatches && japaneseMatches ? "verified" : "partially_verified";
+      await db.kanji.put(next);
+      report.kanji_updated++;
+    }
+    await db.metadata.put({
+      key: dictionaryKey,
+      registered_at: new Date().toISOString(),
+      report,
+    });
+    return report;
+  });
 }
 export async function recordAnswer(answer: Omit<StudyHistory, "id">) {
   await db.transaction("rw", db.history, db.progress, async () => {

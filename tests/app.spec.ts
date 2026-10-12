@@ -140,7 +140,7 @@ test("mobile quiz, history, wrong notes, favorites, import, merge, backup and re
   await expect(page.getByRole("dialog")).toBeVisible();
   await page.getByRole("dialog").locator(".kanji-pills button").first().click();
   await expect(page.getByRole("dialog")).toContainText("음독");
-  await expect(page.getByRole("dialog")).toContainText("미등록");
+  await expect(page.getByRole("dialog")).toContainText("사전 대조 완료");
   await page
     .getByRole("dialog")
     .getByRole("button", { name: "즐겨찾기 추가", exact: true })
@@ -272,30 +272,24 @@ test("version 1 browser upgrade preserves user records and registers book data o
       ),
     ];
     chars.forEach((character) =>
-      tx
-        .objectStore("kanji")
-        .add({
-          id: `k:${character}`,
-          character,
-          korean_hun: "",
-          korean_eum: "",
-          onyomi: [],
-          kunyomi: [],
-          meanings_ko: [],
-        }),
+      tx.objectStore("kanji").add({
+        id: `k:${character}`,
+        character,
+        korean_hun: "",
+        korean_eum: "",
+        onyomi: [],
+        kunyomi: [],
+        meanings_ko: [],
+      }),
     );
     words.forEach(([word, reading, meaning]) =>
-      tx
-        .objectStore("vocabulary")
-        .add({
-          id: `v:${word}`,
-          word,
-          reading,
-          meanings_ko: [meaning],
-          kanji_ids: (word.match(/\p{Script=Han}/gu) ?? []).map(
-            (c) => `k:${c}`,
-          ),
-        }),
+      tx.objectStore("vocabulary").add({
+        id: `v:${word}`,
+        word,
+        reading,
+        meanings_ko: [meaning],
+        kanji_ids: (word.match(/\p{Script=Han}/gu) ?? []).map((c) => `k:${c}`),
+      }),
     );
     const date = new Date().toISOString();
     tx.objectStore("history").add({
@@ -349,12 +343,12 @@ test("version 1 browser upgrade preserves user records and registers book data o
   const k = (await getRecords(page, "kanji")).find(
     (k) => k.character === "改",
   )!;
-  expect(k.onyomi).toBeNull();
-  expect(k.korean_hun).toBeNull();
+  expect(k.onyomi).toContain("カイ");
+  expect(k.korean_hun).toBe("고칠");
   await nav(page, "데이터");
-  await expect(page.getByRole("status")).toContainText(
-    "새 단어 144개 · 새 한자 216개 · 중복 5개 · 오류 0개",
-  );
+  await expect(
+    page.getByRole("status").filter({ hasText: "해커스" }),
+  ).toContainText("새 단어 144개 · 새 한자 216개 · 중복 5개 · 오류 0개");
   await nav(page, "단어장");
   await page.getByLabel("단어 검색").fill("改札");
   await page.locator(".word-main").click();
@@ -369,4 +363,56 @@ test("version 1 browser upgrade preserves user records and registers book data o
   expect(await getRecords(page, "vocabulary")).toHaveLength(150);
   expect(await getRecords(page, "history")).toHaveLength(1);
   expect(await getRecords(page, "progress")).toEqual(progress);
+});
+
+test("dictionary cards show huneum, Japanese readings, variants, sources and unlisted kunyomi offline", async ({
+  page,
+  context,
+}) => {
+  await page.goto("/");
+  await expect(
+    page.getByRole("heading", { name: "오늘도, 한 단어씩" }),
+  ).toBeVisible();
+  await nav(page, "단어장");
+  await page.getByRole("button", { name: "한자 227", exact: true }).click();
+  await page.getByLabel("단어 검색").fill("学");
+  await page.locator(".word-main").click();
+  const dialog = page.getByRole("dialog");
+  await expect(dialog).toContainText("배울 학");
+  await expect(dialog).toContainText("ガク");
+  await expect(dialog).toContainText("まな.ぶ");
+  await expect(dialog).toContainText("한국 한자 대응 글자: 學");
+  await expect(dialog).toContainText("사전 대조 완료");
+  await expect(
+    dialog.getByRole("link", { name: /EDRDG KANJIDIC2/ }),
+  ).toHaveAttribute(
+    "href",
+    "https://www.edrdg.org/wiki/index.php/KANJIDIC_Project",
+  );
+  await page.screenshot({ path: "/tmp/kotoba-kanji-school.png" });
+  await page.getByRole("button", { name: "상세 닫기" }).click();
+  await page.getByLabel("단어 검색").fill("駅");
+  await page.locator(".word-main").click();
+  await expect(dialog).toContainText("역 역");
+  await expect(dialog).toContainText("エキ");
+  await expect(dialog).toContainText("사전 등재 없음");
+  await expect(dialog).toContainText("한국 한자 대응 글자: 驛");
+  await page.getByRole("button", { name: "상세 닫기" }).click();
+  await page.evaluate(async () => {
+    await navigator.serviceWorker.ready;
+  });
+  await page.reload();
+  await page.waitForFunction(() => !!navigator.serviceWorker.controller);
+  await context.setOffline(true);
+  await page.reload();
+  await expect(
+    page.getByRole("heading", { name: "오늘도, 한 단어씩" }),
+  ).toBeVisible();
+  await nav(page, "단어장");
+  await page.getByRole("button", { name: "한자 227", exact: true }).click();
+  await page.getByLabel("단어 검색").fill("駅");
+  await page.locator(".word-main").click();
+  await expect(dialog).toContainText("사전 등재 없음");
+  await expect(dialog).toContainText("사전 대조 완료");
+  await context.setOffline(false);
 });

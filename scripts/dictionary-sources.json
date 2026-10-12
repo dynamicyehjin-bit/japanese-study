@@ -1,0 +1,18 @@
+{
+  "kanjidic": {
+    "url": "https://github.com/scriptin/jmdict-simplified/releases/download/3.6.2%2B20261005200550/kanjidic2-all-3.6.2+20261005200550.json.tgz",
+    "sha256": "b7266f4e8071468218bffbf0c39211fc86f7a8ebe82bc1826507369c66df0495"
+  },
+  "korean": {
+    "url": "https://raw.githubusercontent.com/rycont/hanja-grade-dataset/91a1f49c7f05492f76ce817096b3fb500830f7b9/hanja.csv",
+    "sha256": "8a54b274540a46332fedb5f947ca9f437a6e4ac83197580b1c844f88f0251715"
+  },
+  "joyo": {
+    "url": "https://raw.githubusercontent.com/cjkvi/cjkvi-variants/e4f1da248c9737a243f9930b5dc497cef5d5ae16/joyo-variants.txt",
+    "sha256": "da0666d333c330c07efa2184cdc596bb0de245f65b775c0c805b2b11e6b13c4b"
+  },
+  "old_style": {
+    "url": "https://raw.githubusercontent.com/cjkvi/cjkvi-variants/e4f1da248c9737a243f9930b5dc497cef5d5ae16/jp-old-style.txt",
+    "sha256": "712a953f28bd11e142ea3b0e8cc686097b46971fb0ce26149ba2109fe4919206"
+  }
+}

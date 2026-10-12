@@ -1005,8 +1005,8 @@ function App() {
                   </div>
                   {page === "study" && studyTab === "kanji" && (
                     <div className="info-note">
-                      한자 훈·음과 음독·훈독은 등록된 정보만 표시합니다. 초기
-                      데이터에는 상세 독음이 없습니다.
+                      한자 훈·음과 음독·훈독은 사전 등재 정보를 표시합니다.
+                      훈독이 사전에 등재되지 않은 항목은 임의로 채우지 않습니다.
                     </div>
                   )}
                   <div className="word-grid library-grid">
@@ -1217,23 +1217,62 @@ function DetailModal({
             <div>
               <dt>한국 한자 훈·음</dt>
               <dd>
-                {[item.korean_hun, item.korean_eum].filter(Boolean).join(" ") ||
-                  "미등록"}
+                {item.korean_readings?.some(
+                  (p) => p.hun === item.korean_hun && p.eum === item.korean_eum,
+                )
+                  ? item.korean_readings
+                      .map((p) => `${p.hun} ${p.eum}`)
+                      .join(" · ")
+                  : [item.korean_hun, item.korean_eum]
+                      .filter(Boolean)
+                      .join(" ") || "미등록"}
               </dd>
             </div>
             <div>
               <dt>음독</dt>
-              <dd lang="ja">{item.onyomi?.join(" · ") || "미등록"}</dd>
+              <dd lang="ja">
+                {item.onyomi?.join(" · ") ||
+                  (item.onyomi !== null &&
+                  item.metadata_sources?.some(
+                    (s) => s.field === "japanese_readings",
+                  )
+                    ? "사전 등재 없음"
+                    : "미등록")}
+              </dd>
             </div>
             <div>
               <dt>훈독</dt>
-              <dd lang="ja">{item.kunyomi?.join(" · ") || "미등록"}</dd>
+              <dd lang="ja">
+                {item.kunyomi?.join(" · ") ||
+                  (item.kunyomi !== null &&
+                  item.metadata_sources?.some(
+                    (s) => s.field === "japanese_readings",
+                  )
+                    ? "사전 등재 없음"
+                    : "미등록")}
+              </dd>
             </div>
             <div>
               <dt>한국어 의미</dt>
               <dd>{item.meanings_ko?.join(", ") || "미등록"}</dd>
             </div>
           </dl>
+          {item.korean_reference_character &&
+            item.korean_reference_character !== item.character && (
+              <p className="muted">
+                한국 한자 대응 글자:{" "}
+                <span lang="ko">{item.korean_reference_character}</span> ·
+                신·구자체 대응표 기준
+              </p>
+            )}
+          {item.metadata_sources?.some(
+            (s) => s.field === "japanese_readings",
+          ) && (
+            <p className="muted">
+              훈독의 점(.) 뒤는 오쿠리가나, 하이픈(-)은 접사형 표기입니다. 인명
+              독음은 포함하지 않습니다.
+            </p>
+          )}
           <h2>이 한자가 쓰인 단어</h2>
           <div className="related-words">
             {vocabulary
@@ -1249,7 +1288,41 @@ function DetailModal({
           </div>
         </>
       )}
-      {item.source && <p className="source">출처: {item.source}</p>}
+      {item.source && (
+        <p className="source">
+          {!isWord && item.metadata_sources?.length
+            ? "단어 연결 원자료: "
+            : "출처: "}
+          {item.source === "사용자 제공 단어의 구성 한자 · 상세 정보 미등록" &&
+          !isWord &&
+          item.metadata_sources?.length
+            ? "사용자 제공 예시 단어"
+            : item.source}
+        </p>
+      )}
+      {!isWord && item.metadata_sources?.length ? (
+        <section className="dictionary-sources" aria-label="한자 사전 출처">
+          <p>
+            <CircleCheck size={14} />{" "}
+            {item.metadata_status === "verified"
+              ? "사전 대조 완료"
+              : "일부 사전 대조"}
+            {item.metadata_verified_at && ` · ${item.metadata_verified_at}`}
+          </p>
+          {item.metadata_sources.map((source) => (
+            <a
+              key={`${source.field}:${source.url}`}
+              href={source.url}
+              target="_blank"
+              rel="noreferrer"
+            >
+              {source.label}
+              {source.license && ` · ${source.license}`}{" "}
+              <ArrowRight size={13} />
+            </a>
+          ))}
+        </section>
+      ) : null}
     </dialog>
   );
 }
@@ -1356,6 +1429,15 @@ function DataPanel({
             {r.report.kanji_added}개 · 중복 {r.report.duplicates}개 · 오류{" "}
             {r.report.errors.length}개. 기기별 기존 데이터에 따라 등록 수는
             달라집니다.
+          </div>
+        ))}
+      {registrations
+        .filter((r) => r.key.startsWith("dictionary:"))
+        .map((r) => (
+          <div className="info-note" key={r.key} role="status">
+            한자 사전 보완: {r.report.kanji_updated}개 적용 · 기존 학습 기록과
+            즐겨찾기 유지. 실제 독음과 출처는 단어장 → 한자 카드에서 확인할 수
+            있어요.
           </div>
         ))}
       <div className="data-summary">

@@ -1,11 +1,23 @@
 export type ItemType = "kanji" | "vocabulary";
 export type QuestionType = "reading" | "meaning";
 export type Mode = QuestionType | "mixed";
+export interface KoreanReading {
+  hun: string;
+  eum: string;
+}
+export interface KanjiMetadataSource {
+  label: string;
+  url: string;
+  field: "japanese_readings" | "korean_huneum" | "character_variant";
+  license?: string;
+}
 export interface Kanji {
   id: string;
   character: string;
   korean_hun: string | null;
   korean_eum: string | null;
+  korean_readings?: KoreanReading[];
+  korean_reference_character?: string;
   onyomi: string[] | null;
   kunyomi: string[] | null;
   meanings_ko: string[] | null;
@@ -14,6 +26,8 @@ export interface Kanji {
   source_id?: string;
   metadata_status?: string;
   metadata_source?: string | null;
+  metadata_sources?: KanjiMetadataSource[];
+  metadata_verified_at?: string;
 }
 export interface Vocabulary {
   id: string;

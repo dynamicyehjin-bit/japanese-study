@@ -2055,3 +2055,29 @@ textarea {
     color: #7c8d73;
   }
 }
+.dictionary-sources {
+  border-top: 1px solid var(--line);
+  margin-top: 18px;
+  padding-top: 16px;
+  font-size: 11px;
+  color: #718562;
+}
+.dictionary-sources > p {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 6px;
+}
+.dictionary-sources a {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 44px;
+  font-size: 11px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  line-height: 1.7;
+}
+.dictionary-sources a:hover {
+  color: var(--green);
+}

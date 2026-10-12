@@ -3,6 +3,7 @@ import type {
   Dataset,
   ItemType,
   Kanji,
+  KanjiMetadataSource,
   StudyHistory,
   StudyProgress,
   Vocabulary,
@@ -35,7 +36,8 @@ function optionalMetadata(o: Record<string, unknown>) {
       ? {}
       : { jlpt_level: string(o.jlpt_level ?? o.study_level, "jlpt_level") }),
     ...(o.source === undefined ? {} : { source: string(o.source, "source") }),
-    ...(o.source_id === undefined && o.id === undefined
+    ...(o.source_id === undefined &&
+    (o.id === undefined || (typeof o.id === "string" && /^(k:|v:)/.test(o.id)))
       ? {}
       : { source_id: string(o.source_id ?? o.id, "source_id") }),
   };
@@ -46,6 +48,66 @@ function unique<T>(rows: T[], key: (v: T) => string, label: string) {
     throw new Error(
       `${label}에 중복 항목이 있습니다. 중복을 제거한 뒤 다시 가져오세요.`,
     );
+}
+function kanjiDetails(o: Record<string, unknown>) {
+  const details: Pick<
+    Kanji,
+    | "korean_readings"
+    | "korean_reference_character"
+    | "metadata_sources"
+    | "metadata_verified_at"
+  > = {};
+  if (o.korean_readings !== undefined) {
+    if (!Array.isArray(o.korean_readings))
+      throw new Error("korean_readings는 배열이어야 합니다.");
+    details.korean_readings = o.korean_readings.map((value) => {
+      const row = object(value);
+      return { hun: string(row.hun, "hun"), eum: string(row.eum, "eum") };
+    });
+  }
+  if (o.korean_reference_character !== undefined) {
+    const c = string(
+      o.korean_reference_character,
+      "korean_reference_character",
+    );
+    if (!/^\p{Script=Han}$/u.test(c))
+      throw new Error("대응 한자는 한 글자여야 합니다.");
+    details.korean_reference_character = c;
+  }
+  if (o.metadata_verified_at !== undefined) {
+    const date = string(o.metadata_verified_at, "metadata_verified_at");
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(date) || !Number.isFinite(Date.parse(date)))
+      throw new Error("검증 날짜를 확인해주세요.");
+    details.metadata_verified_at = date;
+  }
+  if (o.metadata_sources !== undefined) {
+    if (!Array.isArray(o.metadata_sources))
+      throw new Error("metadata_sources는 배열이어야 합니다.");
+    details.metadata_sources = o.metadata_sources.map((value) => {
+      const row = object(value);
+      if (
+        !["japanese_readings", "korean_huneum", "character_variant"].includes(
+          String(row.field),
+        )
+      )
+        throw new Error("사전 출처의 field를 확인해주세요.");
+      const url = string(row.url, "source.url");
+      try {
+        if (new URL(url).protocol !== "https:") throw new Error();
+      } catch {
+        throw new Error("사전 출처는 유효한 HTTPS 주소여야 합니다.");
+      }
+      return {
+        label: string(row.label, "source.label"),
+        url,
+        field: row.field as KanjiMetadataSource["field"],
+        ...(row.license === undefined
+          ? {}
+          : { license: string(row.license, "source.license") }),
+      };
+    });
+  }
+  return details;
 }
 export function parseDataset(input: unknown): Dataset {
   const root: Record<string, unknown> = Array.isArray(input)
@@ -73,6 +135,7 @@ export function parseDataset(input: unknown): Dataset {
     return {
       id,
       character,
+      ...kanjiDetails(o),
       korean_hun:
         o.korean_hun === null
           ? null
