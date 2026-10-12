@@ -178,3 +178,30 @@ describe("학습 저장과 백업", () => {
     expect(await db.history.count()).toBe(1);
   });
 });
+
+it("keeps unknown responses as incorrect review records through backup and restore", async () => {
+  const attempt = {
+    ...answer(false),
+    selected_answer: "모르겠어요",
+    response_type: "unknown" as const,
+  };
+  await recordAnswer(attempt);
+  const progress = (await db.progress.toArray())[0];
+  expect(progress.wrong_count).toBe(1);
+  expect(progress.correct_count).toBe(0);
+  expect(reviewIds([progress]).has(attempt.item_id)).toBe(true);
+  const backup = parseBackup(JSON.parse(JSON.stringify(await exportBackup())));
+  expect(backup.history[0]).toMatchObject({
+    response_type: "unknown",
+    selected_answer: "모르겠어요",
+    is_correct: false,
+  });
+  await restoreBackup(backup);
+  expect((await db.history.toArray())[0]).toMatchObject(attempt);
+  expect(() =>
+    parseBackup({
+      ...backup,
+      history: backup.history.map((h) => ({ ...h, is_correct: true })),
+    }),
+  ).toThrow();
+});

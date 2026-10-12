@@ -7,6 +7,7 @@ import {
   Check,
   ChevronRight,
   CircleCheck,
+  CircleHelp,
   Flame,
   Home,
   Leaf,
@@ -46,6 +47,7 @@ import type {
 } from "./lib/types";
 
 type Page = "home" | "study" | "wrong" | "favorites" | "data";
+type QuizSelection = { kind: "answer"; answer: string } | { kind: "unknown" };
 type Session = {
   questions: Question[];
   index: number;
@@ -151,7 +153,8 @@ function App() {
   const [notice, setNotice] = useState("");
   const [fatal, setFatal] = useState("");
   const [session, setSession] = useState<Session | null>(null);
-  const [selected, setSelected] = useState("");
+  const [selected, setSelected] = useState<QuizSelection | null>(null);
+  const feedbackRef = useRef<HTMLDivElement>(null);
   const [feedback, setFeedback] = useState<boolean | null>(null);
   const [busy, setBusy] = useState(false);
   const saving = useRef(false);
@@ -199,6 +202,15 @@ function App() {
     window.addEventListener("beforeunload", handler);
     return () => window.removeEventListener("beforeunload", handler);
   }, [session]);
+  useEffect(() => {
+    if (feedback !== null)
+      feedbackRef.current?.scrollIntoView({
+        block: "nearest",
+        behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches
+          ? "instant"
+          : "smooth",
+      });
+  }, [feedback]);
   const pFor = (type: "kanji" | "vocabulary", id: string) =>
     progress.find((p) => p.item_type === type && p.item_id === id);
   const favorite = (type: "kanji" | "vocabulary", id: string) => {
@@ -247,7 +259,7 @@ function App() {
       return;
     }
     setSession({ questions, index: 0, results: [] });
-    setSelected("");
+    setSelected(null);
     setFeedback(null);
     setDetail(null);
     window.scrollTo(0, 0);
@@ -261,20 +273,23 @@ function App() {
       return;
     setSession(null);
     setFeedback(null);
-    setSelected("");
+    setSelected(null);
   };
   const submit = async () => {
     if (!session || !selected || feedback !== null || saving.current) return;
     saving.current = true;
     setBusy(true);
     const question = session.questions[session.index];
-    const correct = selected === question.answer;
+    const correct =
+      selected.kind === "answer" && selected.answer === question.answer;
     try {
       await recordAnswer({
         item_type: "vocabulary",
         item_id: question.word.id,
         question_type: question.type,
-        selected_answer: selected,
+        selected_answer:
+          selected.kind === "unknown" ? "모르겠어요" : selected.answer,
+        response_type: selected.kind,
         is_correct: correct,
         studied_at: new Date().toISOString(),
       });
@@ -293,7 +308,7 @@ function App() {
   };
   const next = () => {
     setSession((s) => (s ? { ...s, index: s.index + 1 } : s));
-    setSelected("");
+    setSelected(null);
     setFeedback(null);
     window.scrollTo(0, 0);
   };
@@ -606,9 +621,13 @@ function App() {
                         <button
                           key={o}
                           disabled={feedback !== null || busy}
-                          className={`option ${selected === o ? "chosen" : ""} ${feedback !== null && o === q.answer ? "correct" : ""} ${feedback === false && selected === o ? "incorrect" : ""}`}
-                          onClick={() => setSelected(o)}
-                          aria-pressed={selected === o}
+                          className={`option ${selected?.kind === "answer" && selected.answer === o ? "chosen" : ""} ${feedback !== null && o === q.answer ? "correct" : ""} ${feedback === false && selected?.kind === "answer" && selected.answer === o ? "incorrect" : ""}`}
+                          onClick={() =>
+                            setSelected({ kind: "answer", answer: o })
+                          }
+                          aria-pressed={
+                            selected?.kind === "answer" && selected.answer === o
+                          }
                         >
                           <span className="option-number">{i + 1}</span>
                           <span lang={q.type === "reading" ? "ja" : "ko"}>
@@ -619,9 +638,19 @@ function App() {
                           )}
                         </button>
                       ))}
+                      <button
+                        className={`unknown-option ${selected?.kind === "unknown" ? "chosen" : ""} ${feedback === false && selected?.kind === "unknown" ? "incorrect" : ""}`}
+                        disabled={feedback !== null || busy}
+                        aria-pressed={selected?.kind === "unknown"}
+                        onClick={() => setSelected({ kind: "unknown" })}
+                      >
+                        <CircleHelp size={20} />
+                        <span>모르겠어요</span>
+                      </button>
                     </div>
                     {feedback !== null && (
                       <div
+                        ref={feedbackRef}
                         className={`feedback ${feedback ? "success" : "failure"}`}
                         role="status"
                       >

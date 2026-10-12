@@ -372,6 +372,14 @@ export function parseBackup(input: unknown): Backup {
       typeof r.is_correct !== "boolean"
     )
       throw new Error("퀴즈 기록 형식이 올바르지 않습니다.");
+    if (
+      r.response_type !== undefined &&
+      r.response_type !== "answer" &&
+      r.response_type !== "unknown"
+    )
+      throw new Error("풀이 응답 종류가 올바르지 않습니다.");
+    if (r.response_type === "unknown" && r.is_correct)
+      throw new Error("모르겠어요 응답은 정답으로 기록할 수 없습니다.");
     const id = count(r.id, "history.id");
     if (!id) throw new Error("history.id는 양수여야 합니다.");
     return {
@@ -379,6 +387,9 @@ export function parseBackup(input: unknown): Backup {
       id,
       question_type: r.question_type,
       selected_answer: string(r.selected_answer, "selected_answer"),
+      ...(r.response_type === undefined
+        ? {}
+        : { response_type: r.response_type as "answer" | "unknown" }),
       is_correct: r.is_correct,
       studied_at: date(r.studied_at, "studied_at")!,
     };

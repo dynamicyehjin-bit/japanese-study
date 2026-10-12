@@ -416,3 +416,82 @@ test("dictionary cards show huneum, Japanese readings, variants, sources and unl
   await expect(dialog).toContainText("사전 대조 완료");
   await context.setOffline(false);
 });
+
+test("unknown answers persist as wrong reviews and mobile actions stay visible without changing kanji size", async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 390, height: 667 });
+  await page.goto("/");
+  await expect(
+    page.getByRole("heading", { name: "오늘도, 한 단어씩" }),
+  ).toBeVisible();
+  await page.getByRole("button", { name: "학습 시작하기" }).click();
+  const confirm = page.getByRole("button", { name: "정답 확인", exact: true });
+  const checkAction = async () => {
+    const rect = await confirm.boundingBox();
+    expect(rect).not.toBeNull();
+    expect(rect!.y).toBeGreaterThanOrEqual(0);
+    expect(rect!.y + rect!.height).toBeLessThanOrEqual(667);
+    expect(
+      await page
+        .locator(".quiz-footer")
+        .evaluate((e) => getComputedStyle(e).position),
+    ).toBe("fixed");
+  };
+  await checkAction();
+  expect(
+    await page
+      .locator(".question-word>span")
+      .evaluate((e) => getComputedStyle(e).fontSize),
+  ).toBe("52px");
+  expect(await getRecords(page, "history")).toHaveLength(0);
+  await page.getByRole("button", { name: "모르겠어요", exact: true }).click();
+  await expect(
+    page.getByRole("button", { name: "모르겠어요", exact: true }),
+  ).toHaveAttribute("aria-pressed", "true");
+  await expect(confirm).toBeEnabled();
+  expect(await getRecords(page, "history")).toHaveLength(0);
+  await page.locator(".option").first().click();
+  await expect(
+    page.getByRole("button", { name: "모르겠어요", exact: true }),
+  ).toHaveAttribute("aria-pressed", "false");
+  await page.getByRole("button", { name: "모르겠어요", exact: true }).click();
+  await checkAction();
+  const word = (await page.locator(".question-word>span").textContent())!;
+  await confirm.click();
+  await expect(page.locator(".feedback")).toContainText("괜찮아요");
+  const history = await getRecords(page, "history");
+  expect(history).toHaveLength(1);
+  expect(history[0]).toMatchObject({
+    response_type: "unknown",
+    selected_answer: "모르겠어요",
+    is_correct: false,
+    item_id: `v:${word}`,
+  });
+  const progress = await getRecords(page, "progress");
+  expect(progress[0]).toMatchObject({ wrong_count: 1, correct_count: 0 });
+  const next = page.getByRole("button", { name: "다음 문제", exact: true });
+  await expect(next).toBeVisible();
+  const nextRect = (await next.boundingBox())!;
+  expect(nextRect.y + nextRect.height).toBeLessThanOrEqual(667);
+  await expect
+    .poll(async () => {
+      const f = (await page.locator(".feedback").boundingBox())!;
+      const bar = (await page.locator(".quiz-footer").boundingBox())!;
+      return f.y + f.height <= bar.y + 1;
+    })
+    .toBe(true);
+  await page.screenshot({ path: "/tmp/kotoba-unknown-mobile.png" });
+  await next.click();
+  await expect(
+    page.getByRole("button", { name: "정답 확인", exact: true }),
+  ).toBeDisabled();
+  await expect(
+    page.getByRole("button", { name: "모르겠어요", exact: true }),
+  ).toHaveAttribute("aria-pressed", "false");
+  await page.reload();
+  expect(await getRecords(page, "history")).toHaveLength(1);
+  await nav(page, "오답노트");
+  await expect(page.locator(".word-card")).toHaveCount(1);
+  await expect(page.locator(".word-card")).toContainText(word);
+});

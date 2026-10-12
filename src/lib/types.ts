@@ -49,6 +49,7 @@ export interface StudyHistory {
   item_id: string;
   question_type: QuestionType;
   selected_answer: string;
+  response_type?: "answer" | "unknown";
   is_correct: boolean;
   studied_at: string;
 }
