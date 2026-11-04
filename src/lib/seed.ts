@@ -3,7 +3,8 @@ export const vocabularyId = (word: string) =>
   `v:${word.normalize("NFC").trim()}`;
 export const kanjiId = (character: string) => `k:${character}`;
 export function characters(word: string): string[] {
-  return [...new Set(word.match(/\p{Script=Han}/gu) ?? [])];
+  // Ideographic iteration marks repeat a kanji but are not dictionary characters.
+  return [...new Set((word.match(/\p{Script=Han}/gu) ?? []).filter(c => c !== "々"))];
 }
 export const seed: Dataset = {
   kanji: [

@@ -54,6 +54,37 @@ export async function initialize(
   if (options.includeBundled !== false) await registerBundledDataset();
   if ((options.includeDictionary ?? options.includeBundled) !== false)
     await registerKanjiDictionary();
+  if (options.includeBundled !== false) await registerEnrichedDataset();
+}
+export const enrichedKey = "dataset:jlpt-enriched-2026-11:1";
+export async function registerEnrichedDataset(): Promise<ImportReport> {
+  const { default: raw } = await import("../data/jlpt-enriched-2026-11.json");
+  const data = parseDataset(raw);
+  return db.transaction("rw", db.kanji, db.vocabulary, db.metadata, async () => {
+    const existing = await db.metadata.get(enrichedKey);
+    if (existing) return existing.report;
+    // Keep existing dictionary details and user corrections; fill missing fields.
+    for (let i = 0; i < data.kanji.length; i++) {
+      const entry = data.kanji[i];
+      const old = await db.kanji.where("character").equals(entry.character).first();
+      if (!old) continue;
+      data.kanji[i] = {
+        ...entry,
+        ...old,
+        id: entry.id,
+        korean_hun: old.korean_hun || entry.korean_hun,
+        korean_eum: old.korean_eum || entry.korean_eum,
+        onyomi: old.onyomi?.length ? old.onyomi : entry.onyomi,
+        kunyomi: old.kunyomi?.length ? old.kunyomi : entry.kunyomi,
+        meanings_ko: old.meanings_ko?.length ? old.meanings_ko : entry.meanings_ko,
+        metadata_status: old.metadata_status === "verified" || old.metadata_status === "partially_verified" ? old.metadata_status : entry.metadata_status,
+        metadata_source: [old.metadata_source, entry.metadata_source].filter(Boolean).join(" · "),
+      };
+    }
+    const report = await mergeRows(data);
+    await db.metadata.put({ key: enrichedKey, registered_at: new Date().toISOString(), report });
+    return report;
+  });
 }
 export const bundledKey = `dataset:${bundledDataset.dataset_id}:${bundledDataset.schema_version}`;
 export async function registerBundledDataset(): Promise<ImportReport> {
