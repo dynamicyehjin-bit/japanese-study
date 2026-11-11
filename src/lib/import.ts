@@ -431,6 +431,10 @@ export function parseBackup(input: unknown): Backup {
     format: "kotoba-backup",
     version: 1,
     exported_at: date(o.exported_at, "exported_at")!,
+    daily_review: o.daily_review === undefined ? [] : (() => {
+      if (!Array.isArray(o.daily_review) || o.daily_review.some(id => typeof id !== "string" || !dataset.vocabulary.some(v => v.id === id))) throw new Error("복습 목록의 단어 연결이 올바르지 않습니다.");
+      return [...new Set(o.daily_review as string[])];
+    })(),
     history,
     progress,
   };

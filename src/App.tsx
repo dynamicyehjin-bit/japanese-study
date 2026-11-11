@@ -24,6 +24,7 @@ import {
   Sprout,
   Trophy,
   CheckCheck,
+  ListChecks,
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import {
@@ -34,6 +35,7 @@ import {
   mergeDataset,
   exportBackup,
   restoreBackup,
+  setDailyReview,
 } from "./lib/db";
 import { createQuiz, reviewIds } from "./lib/quiz";
 import { parseBackup, parseCSV, parseDataset } from "./lib/import";
@@ -46,7 +48,7 @@ import type {
   Vocabulary,
 } from "./lib/types";
 
-type Page = "home" | "study" | "wrong" | "favorites" | "data";
+type Page = "home" | "study" | "wrong" | "favorites" | "data" | "today";
 type QuizSelection = { kind: "answer"; answer: string } | { kind: "unknown" };
 type Session = {
   questions: Question[];
@@ -61,6 +63,7 @@ const modes: { id: Mode; label: string; caption: string }[] = [
 const nav: { id: Page; label: string; icon: LucideIcon }[] = [
   { id: "home", label: "홈", icon: Home },
   { id: "study", label: "단어장", icon: BookOpen },
+  { id: "today", label: "오늘 복습", icon: ListChecks },
   { id: "wrong", label: "오답노트", icon: RefreshCw },
   { id: "favorites", label: "즐겨찾기", icon: Star },
   { id: "data", label: "데이터 관리", icon: Settings2 },
@@ -169,6 +172,13 @@ function App() {
   const kanji = useLiveQuery(() => db.kanji.toArray(), []) ?? [];
   const history = useLiveQuery(() => db.history.toArray(), []) ?? [];
   const progress = useLiveQuery(() => db.progress.toArray(), []) ?? [];
+  const dailyReview = useLiveQuery(() => db.dailyReview.toArray(), []) ?? [];
+  const dailyIds = new Set(dailyReview.map(row => row.id));
+  const dailyWords = vocabulary.filter(word => dailyIds.has(word.id));
+  const [editingDaily, setEditingDaily] = useState(false);
+  const selectDaily = (id: string, selected: boolean) => {
+    setDailyReview(id, selected).catch(() => setNotice("복습 목록을 저장하지 못했습니다. 다시 시도해주세요."));
+  };
   useEffect(() => {
     initialize()
       .then(() => setReady(true))
@@ -333,6 +343,10 @@ function App() {
         onClick={() => favorite("vocabulary", v.id)}
       />
       <div className="word-meta">
+        <label className="daily-check">
+          <input type="checkbox" checked={dailyIds.has(v.id)} onChange={e => selectDaily(v.id, e.target.checked)} />
+          오늘 복습
+        </label>
         {page === "wrong" ? (
           <>
             <span className="wrong-tag">
@@ -705,6 +719,20 @@ function App() {
             )
           ) : (
             <>
+              {page === "home" && <button className="secondary" onClick={() => navigate("today")}><ListChecks size={18} />오늘 복습할 단어 · {dailyWords.length}개<ChevronRight size={18} /></button>}
+              {page === "today" && (
+                <section>
+                  <div className="page-heading"><h1>오늘 복습할 단어</h1><p>{dailyWords.length}개</p></div>
+                  <div className="daily-toolbar">
+                    <button className="primary" disabled={!dailyWords.length} onClick={() => start(dailyWords)}><BookOpen size={18} />복습 시작</button>
+                    <button className="secondary" onClick={() => setEditingDaily(!editingDaily)}><ListChecks size={18} />{editingDaily ? "목록 보기" : "단어 선택"}</button>
+                    <select aria-label="복습 퀴즈 유형" value={mode} onChange={e => setMode(e.target.value as Mode)}>{modes.map(m => <option key={m.id} value={m.id}>{m.label}</option>)}</select>
+                  </div>
+                  <input className="daily-search" aria-label="복습 단어 검색" placeholder="단어 검색" value={search} onChange={e => setSearch(e.target.value)} />
+                  <div className="word-grid">{(editingDaily ? vocabulary : dailyWords).filter(v => `${v.word} ${v.reading} ${v.meanings_ko.join(" ")}`.includes(search.trim())).map(wordCard)}</div>
+                  {!dailyWords.length && !editingDaily && <p>선택한 단어가 없습니다.</p>}
+                </section>
+              )}
               {page === "home" && (
                 <>
                   <div className="page-heading">

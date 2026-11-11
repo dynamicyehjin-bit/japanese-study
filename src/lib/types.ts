@@ -67,6 +67,7 @@ export interface Dataset {
   vocabulary: Vocabulary[];
 }
 export interface Backup extends Dataset {
+  daily_review?: string[];
   format: "kotoba-backup";
   version: 1;
   exported_at: string;

@@ -14,6 +14,7 @@ import { seed } from "./seed";
 import { parseDataset } from "./import";
 import bundledDataset from "../data/hackers-pages-2-4.json";
 export class StudyDB extends Dexie {
+  dailyReview!: Table<{ id: string }, string>;
   metadata!: Table<DatasetRegistration, string>;
   kanji!: Table<Kanji, string>;
   vocabulary!: Table<Vocabulary, string>;
@@ -28,6 +29,7 @@ export class StudyDB extends Dexie {
       progress: "[item_type+item_id],item_type,item_id",
     });
     this.version(2).stores({ metadata: "key" });
+    this.version(3).stores({ dailyReview: "id" });
     this.on("populate", async () => {
       await this.kanji.bulkAdd(seed.kanji);
       await this.vocabulary.bulkAdd(seed.vocabulary);
@@ -58,7 +60,24 @@ export async function initialize(
   if (options.includeBundled !== false) {
     const { default: raw } = await import("../data/jlpt-nov12.json");
     await registerSupplement(parseDataset(raw), "dataset:jlpt-nov12:1");
+    await db.transaction("rw", db.dailyReview, db.vocabulary, db.metadata, async () => {
+      const key = "list:today-review-nov12:1";
+      if (await db.metadata.get(key)) return;
+      for (const word of raw.vocabulary) {
+        const stored = await db.vocabulary.where("word").equals(word.word).first();
+        if (stored) await db.dailyReview.put({ id: stored.id });
+      }
+      await db.metadata.put({ key, registered_at: new Date().toISOString(), report: { added: 0, updated: 0, kanji_added: 0, kanji_updated: 0, duplicates: 0, errors: [] } });
+    });
   }
+}
+export async function setDailyReview(id: string, selected: boolean) {
+  await db.transaction("rw", db.dailyReview, db.vocabulary, async () => {
+    if (selected) {
+      if (!(await db.vocabulary.get(id))) throw new Error("단어를 찾을 수 없습니다.");
+      await db.dailyReview.put({ id });
+    } else await db.dailyReview.delete(id);
+  });
 }
 export const enrichedKey = "dataset:jlpt-enriched-2026-11:1";
 export async function registerEnrichedDataset(): Promise<ImportReport> {
@@ -293,6 +312,7 @@ export async function exportBackup(): Promise<Backup> {
     db.vocabulary,
     db.history,
     db.progress,
+    db.dailyReview,
     async () => ({
       format: "kotoba-backup",
       version: 1,
@@ -301,6 +321,7 @@ export async function exportBackup(): Promise<Backup> {
       vocabulary: await db.vocabulary.toArray(),
       history: await db.history.toArray(),
       progress: await db.progress.toArray(),
+      daily_review: await db.dailyReview.toCollection().primaryKeys(),
     }),
   );
 }
@@ -312,17 +333,20 @@ export async function restoreBackup(data: Backup) {
     db.vocabulary,
     db.history,
     db.progress,
+    db.dailyReview,
     async () => {
       await Promise.all([
         db.kanji.clear(),
         db.vocabulary.clear(),
         db.history.clear(),
         db.progress.clear(),
+        db.dailyReview.clear(),
       ]);
       await db.kanji.bulkAdd(data.kanji);
       await db.vocabulary.bulkAdd(data.vocabulary);
       await db.history.bulkAdd(data.history);
       await db.progress.bulkAdd(data.progress);
+      await db.dailyReview.bulkAdd((data.daily_review ?? []).filter(id => data.vocabulary.some(v => v.id === id)).map(id => ({id})));
     },
   );
 }

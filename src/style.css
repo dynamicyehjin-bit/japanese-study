@@ -836,6 +836,11 @@ a {
   gap: 6px;
 }
 .mobile-brand,
+.daily-toolbar { display: flex; flex-wrap: wrap; gap: 12px; margin: 16px 0; }
+.daily-toolbar select, .daily-search { padding: 12px; border: 1px solid var(--line); border-radius: 6px; background: white; }
+.daily-search { width: 100%; margin-bottom: 20px; box-sizing: border-box; }
+.daily-check { display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; }
+.word-meta { flex-wrap: wrap; gap: 8px; }
 .mobile-nav {
   display: none;
 }
@@ -1855,7 +1860,8 @@ textarea {
     justify-content: space-around;
   }
   .mobile-nav button {
-    min-width: 52px;
+    min-width: 0;
+    flex: 1;
     min-height: 48px;
     display: flex;
     flex-direction: column;

@@ -1,0 +1,20 @@
+import "fake-indexeddb/auto";
+import { it, expect } from "vitest";
+import { db, initialize, setDailyReview, exportBackup, restoreBackup } from "./db";
+import { parseBackup } from "./import";
+it("seeds 146 words once, persists edits, and backs up the list", async () => {
+  await db.delete(); await initialize();
+  expect(await db.dailyReview.count()).toBe(146);
+  const before = await exportBackup();
+  await setDailyReview("v:渡す", false);
+  await initialize();
+  expect(await db.dailyReview.count()).toBe(145);
+  expect((await exportBackup()).history).toEqual(before.history);
+  await setDailyReview("v:渡す", true);
+  await expect(setDailyReview("missing", true)).rejects.toThrow();
+  const backup = parseBackup(await exportBackup());
+  await db.dailyReview.clear();
+  await restoreBackup(backup);
+  expect(await db.dailyReview.count()).toBe(146);
+  db.close(); await db.delete();
+});
