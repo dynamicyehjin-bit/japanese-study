@@ -3,6 +3,7 @@ import Dexie from "dexie";
 import { beforeEach, afterAll, it, expect } from "vitest";
 import raw from "../data/hackers-pages-2-4.json";
 import enriched from "../data/jlpt-enriched-2026-11.json";
+import november from "../data/jlpt-nov12.json";
 import {
   db,
   initialize,
@@ -172,8 +173,8 @@ it("upgrades an existing version 1 database without losing any user records", as
   await initialize();
   expect(await db.history.toArray()).toEqual([history]);
   expect(await db.progress.toArray()).toEqual([progress]);
-  expect(await db.vocabulary.count()).toBe(new Set([...seed.vocabulary, ...raw.vocabulary, ...enriched.vocabulary].map(v => v.word)).size);
-  expect(await db.kanji.count()).toBe(new Set([...seed.kanji, ...raw.kanji, ...enriched.kanji].map(k => k.character)).size);
+  expect(await db.vocabulary.count()).toBe(new Set([...seed.vocabulary, ...raw.vocabulary, ...enriched.vocabulary, ...november.vocabulary].map(v => v.word)).size);
+  expect(await db.kanji.count()).toBe(new Set([...seed.kanji, ...raw.kanji, ...enriched.kanji, ...november.kanji].map(k => k.character)).size);
 });
 it("rolls back partial imports when a supplied link is broken", async () => {
   const before = await exportBackup();

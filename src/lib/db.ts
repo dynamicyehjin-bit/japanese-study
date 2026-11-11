@@ -55,13 +55,20 @@ export async function initialize(
   if ((options.includeDictionary ?? options.includeBundled) !== false)
     await registerKanjiDictionary();
   if (options.includeBundled !== false) await registerEnrichedDataset();
+  if (options.includeBundled !== false) {
+    const { default: raw } = await import("../data/jlpt-nov12.json");
+    await registerSupplement(parseDataset(raw), "dataset:jlpt-nov12:1");
+  }
 }
 export const enrichedKey = "dataset:jlpt-enriched-2026-11:1";
 export async function registerEnrichedDataset(): Promise<ImportReport> {
   const { default: raw } = await import("../data/jlpt-enriched-2026-11.json");
   const data = parseDataset(raw);
+  return registerSupplement(data, enrichedKey);
+}
+export async function registerSupplement(data: Dataset, key: string): Promise<ImportReport> {
   return db.transaction("rw", db.kanji, db.vocabulary, db.metadata, async () => {
-    const existing = await db.metadata.get(enrichedKey);
+    const existing = await db.metadata.get(key);
     if (existing) return existing.report;
     // Keep existing dictionary details and user corrections; fill missing fields.
     for (let i = 0; i < data.kanji.length; i++) {
@@ -81,8 +88,13 @@ export async function registerEnrichedDataset(): Promise<ImportReport> {
         metadata_source: [old.metadata_source, entry.metadata_source].filter(Boolean).join(" · "),
       };
     }
+    for (let i = 0; i < data.vocabulary.length; i++) {
+      const v = data.vocabulary[i];
+      const old = await db.vocabulary.where("word").equals(v.word).first();
+      if (old) data.vocabulary[i] = { ...v, ...old, meanings_ko: [...new Set([...old.meanings_ko, ...v.meanings_ko])] };
+    }
     const report = await mergeRows(data);
-    await db.metadata.put({ key: enrichedKey, registered_at: new Date().toISOString(), report });
+    await db.metadata.put({ key, registered_at: new Date().toISOString(), report });
     return report;
   });
 }

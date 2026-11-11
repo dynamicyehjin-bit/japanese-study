@@ -14,6 +14,9 @@ import urllib.request
 ROOT = Path(__file__).resolve().parents[1]
 parser = argparse.ArgumentParser()
 parser.add_argument('--cache-dir', type=Path, default=Path('/tmp/kotoba-dictionary-sources'))
+parser.add_argument('--input', type=Path)
+parser.add_argument('--output', type=Path)
+parser.add_argument('--evidence', type=Path)
 args = parser.parse_args()
 args.cache_dir.mkdir(parents=True, exist_ok=True)
 manifest = json.loads((ROOT / 'scripts/dictionary-sources.json').read_text())
@@ -42,6 +45,9 @@ korean_rows = list(csv.DictReader(io.StringIO(source('korean').decode('utf-8-sig
 grades = {}
 for row in korean_rows:
     grades.setdefault(unicodedata.normalize('NFC', row['hanja']), []).append(row)
+# Japanese kokuji: Korean gloss supplied by the user; eum confirmed in libhangul.
+if args.input:
+    grades.setdefault('働', [{'hanja': '働', 'main_sound': '동', 'meaning': "[(['일할'], ['동'])]"}])
 variants = {}
 for line in source('joyo').decode().splitlines():
     parts = line.split(',')
@@ -60,14 +66,14 @@ for line in source('old_style').decode().splitlines():
         if len(char) == len(ref) == 1:
             variants.setdefault(char, (ref, 'old_style', line))
 
-book = json.loads((ROOT / 'src/data/hackers-pages-2-4.json').read_text())
+book = json.loads((args.input or ROOT / 'src/data/hackers-pages-2-4.json').read_text())
 characters = {unicodedata.normalize('NFC', row['character']) for row in book['kanji']}
 # Read the actual base seed instead of maintaining a second hand-written kanji list.
 seed_text = (ROOT / 'src/lib/seed.ts').read_text()
 seed_words = re.findall(r'\["([^"\n]+)", "[^"\n]+", "[^"\n]+"\]', seed_text)
 if len(seed_words) != 6:
     raise ValueError('Seed vocabulary format changed; update the extractor rather than guessing characters.')
-for word in seed_words:
+for word in ([] if args.input else seed_words):
     characters.update(c for c in word if unicodedata.name(c, '').startswith('CJK UNIFIED IDEOGRAPH'))
 
 patches = []
@@ -94,6 +100,8 @@ for char in sorted(characters):
         {'label': 'EDRDG KANJIDIC2 (2026-10-05)', 'url': 'https://www.edrdg.org/wiki/index.php/KANJIDIC_Project', 'field': 'japanese_readings', 'license': 'CC-BY-SA-4.0'},
         {'label': '한국어문회 선정한자 CSV 변환본 (rycont)', 'url': 'https://github.com/rycont/hanja-grade-dataset/blob/91a1f49c7f05492f76ce817096b3fb500830f7b9/hanja.csv', 'field': 'korean_huneum'},
     ]
+    if char == '働':
+        sources[1] = {'label': '사용자 단어장 한국어 훈 / libhangul 한국어 음', 'url': 'https://github.com/libhangul/libhangul/blob/main/data/hanja/hanja.txt', 'field': 'korean_huneum'}
     if mapping_name:
         sources.append({'label': 'CJKVI 신·구자체 대응표', 'url': manifest[mapping_name]['url'], 'field': 'character_variant'})
     patches.append({
@@ -102,13 +110,13 @@ for char in sorted(characters):
         'korean_readings': pairs, 'korean_reference_character': reference,
         'onyomi': onyomi, 'kunyomi': kunyomi,
         'meanings_ko': list(dict.fromkeys(p['hun'] for p in pairs)),
-        'metadata_status': 'verified', 'metadata_verified_at': '2026-10-12',
+        'metadata_status': 'verified', 'metadata_verified_at': '2026-11-12' if args.input else '2026-10-12',
         'metadata_source': 'KANJIDIC2 / 한국어문회 선정한자 자료' + (' / CJKVI 자형 대응표' if mapping_name else ''),
         'metadata_sources': sources,
     })
     evidence.append({'character': char, 'japanese_readings': [r for r in readings if r['type'] in ('ja_on', 'ja_kun')], 'korean_reference_character': reference, 'korean_original_rows': rows, 'korean_original_pairs': [pair for row in rows for pair in ast.literal_eval(row['meaning'])], 'variant_source': mapping_name, 'variant_original_line': mapping_line})
 
 result = {'dataset_id': 'kanji-dictionary-2026-10-12', 'schema_version': '1.0.0', 'kanji': patches, 'vocabulary': []}
-(ROOT / 'src/data/kanji-dictionary.json').write_text(json.dumps(result, ensure_ascii=False, indent=2) + '\n')
-(ROOT / 'docs/dictionaries/extraction-evidence.json').write_text(json.dumps({'dictionary_date': dictionary['dictDate'], 'sources': manifest, 'characters': evidence}, ensure_ascii=False, indent=2) + '\n')
+(args.output or ROOT / 'src/data/kanji-dictionary.json').write_text(json.dumps(result, ensure_ascii=False, indent=2) + '\n')
+(args.evidence or ROOT / 'docs/dictionaries/extraction-evidence.json').write_text(json.dumps({'dictionary_date': dictionary['dictDate'], 'sources': manifest, 'characters': evidence}, ensure_ascii=False, indent=2) + '\n')
 print(json.dumps({'kanji': len(patches), 'onyomi_present': sum(bool(k['onyomi']) for k in patches), 'kunyomi_present': sum(bool(k['kunyomi']) for k in patches), 'kunyomi_not_listed': [k['character'] for k in patches if not k['kunyomi']], 'korean_huneum_present': len(patches), 'variant_references': sum(k['character'] != k['korean_reference_character'] for k in patches)}, ensure_ascii=False))

@@ -1,0 +1,3415 @@
+{
+  "dictionary_date": "2026-10-05",
+  "sources": {
+    "kanjidic": {
+      "url": "https://github.com/scriptin/jmdict-simplified/releases/download/3.6.2%2B20261005200550/kanjidic2-all-3.6.2+20261005200550.json.tgz",
+      "sha256": "b7266f4e8071468218bffbf0c39211fc86f7a8ebe82bc1826507369c66df0495"
+    },
+    "korean": {
+      "url": "https://raw.githubusercontent.com/rycont/hanja-grade-dataset/91a1f49c7f05492f76ce817096b3fb500830f7b9/hanja.csv",
+      "sha256": "8a54b274540a46332fedb5f947ca9f437a6e4ac83197580b1c844f88f0251715"
+    },
+    "joyo": {
+      "url": "https://raw.githubusercontent.com/cjkvi/cjkvi-variants/e4f1da248c9737a243f9930b5dc497cef5d5ae16/joyo-variants.txt",
+      "sha256": "da0666d333c330c07efa2184cdc596bb0de245f65b775c0c805b2b11e6b13c4b"
+    },
+    "old_style": {
+      "url": "https://raw.githubusercontent.com/cjkvi/cjkvi-variants/e4f1da248c9737a243f9930b5dc497cef5d5ae16/jp-old-style.txt",
+      "sha256": "712a953f28bd11e142ea3b0e8cc686097b46971fb0ce26149ba2109fe4919206"
+    }
+  },
+  "characters": [
+    {
+      "character": "仕",
+      "japanese_readings": [
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "シ"
+        },
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "ジ"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "つか.える"
+        }
+      ],
+      "korean_reference_character": "仕",
+      "korean_original_rows": [
+        {
+          "main_sound": "사",
+          "level": "5급Ⅱ",
+          "hanja": "仕",
+          "meaning": "[[['섬길'], ['사']]]",
+          "radical": "人",
+          "strokes": "3",
+          "total_strokes": "5"
+        }
+      ],
+      "korean_original_pairs": [
+        [
+          [
+            "섬길"
+          ],
+          [
+            "사"
+          ]
+        ]
+      ],
+      "variant_source": null,
+      "variant_original_line": null
+    },
+    {
+      "character": "企",
+      "japanese_readings": [
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "キ"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "くわだ.てる"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "たくら.む"
+        }
+      ],
+      "korean_reference_character": "企",
+      "korean_original_rows": [
+        {
+          "main_sound": "기",
+          "level": "3급Ⅱ",
+          "hanja": "企",
+          "meaning": "[[['꾀할'], ['기']]]",
+          "radical": "人",
+          "strokes": "4",
+          "total_strokes": "6"
+        }
+      ],
+      "korean_original_pairs": [
+        [
+          [
+            "꾀할"
+          ],
+          [
+            "기"
+          ]
+        ]
+      ],
+      "variant_source": null,
+      "variant_original_line": null
+    },
+    {
+      "character": "傘",
+      "japanese_readings": [
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "サン"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "かさ"
+        }
+      ],
+      "korean_reference_character": "傘",
+      "korean_original_rows": [
+        {
+          "main_sound": "산",
+          "level": "2급",
+          "hanja": "傘",
+          "meaning": "[[['우산'], ['산']]]",
+          "radical": "人",
+          "strokes": "10",
+          "total_strokes": "12"
+        }
+      ],
+      "korean_original_pairs": [
+        [
+          [
+            "우산"
+          ],
+          [
+            "산"
+          ]
+        ]
+      ],
+      "variant_source": null,
+      "variant_original_line": null
+    },
+    {
+      "character": "催",
+      "japanese_readings": [
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "サイ"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "もよう.す"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "もよお.す"
+        }
+      ],
+      "korean_reference_character": "催",
+      "korean_original_rows": [
+        {
+          "main_sound": "최",
+          "level": "3급Ⅱ",
+          "hanja": "催",
+          "meaning": "[[['재촉할'], ['최']]]",
+          "radical": "人",
+          "strokes": "11",
+          "total_strokes": "13"
+        }
+      ],
+      "korean_original_pairs": [
+        [
+          [
+            "재촉할"
+          ],
+          [
+            "최"
+          ]
+        ]
+      ],
+      "variant_source": null,
+      "variant_original_line": null
+    },
+    {
+      "character": "働",
+      "japanese_readings": [
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "ドウ"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "はたら.く"
+        }
+      ],
+      "korean_reference_character": "働",
+      "korean_original_rows": [
+        {
+          "hanja": "働",
+          "main_sound": "동",
+          "meaning": "[(['일할'], ['동'])]"
+        }
+      ],
+      "korean_original_pairs": [
+        [
+          [
+            "일할"
+          ],
+          [
+            "동"
+          ]
+        ]
+      ],
+      "variant_source": null,
+      "variant_original_line": null
+    },
+    {
+      "character": "切",
+      "japanese_readings": [
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "セツ"
+        },
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "サイ"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "き.る"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "-き.る"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "き.り"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "-き.り"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "-ぎ.り"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "き.れる"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "-き.れる"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "き.れ"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "-き.れ"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "-ぎ.れ"
+        }
+      ],
+      "korean_reference_character": "切",
+      "korean_original_rows": [
+        {
+          "main_sound": "절",
+          "level": "5급Ⅱ",
+          "hanja": "切",
+          "meaning": "[[['끊을'], ['절']], [['온통'], ['체']]]",
+          "radical": "刀",
+          "strokes": "2",
+          "total_strokes": "4"
+        }
+      ],
+      "korean_original_pairs": [
+        [
+          [
+            "끊을"
+          ],
+          [
+            "절"
+          ]
+        ],
+        [
+          [
+            "온통"
+          ],
+          [
+            "체"
+          ]
+        ]
+      ],
+      "variant_source": null,
+      "variant_original_line": null
+    },
+    {
+      "character": "勇",
+      "japanese_readings": [
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "ユウ"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "いさ.む"
+        }
+      ],
+      "korean_reference_character": "勇",
+      "korean_original_rows": [
+        {
+          "main_sound": "용",
+          "level": "6급Ⅱ",
+          "hanja": "勇",
+          "meaning": "[[['날랠'], ['용']]]",
+          "radical": "力",
+          "strokes": "7",
+          "total_strokes": "9"
+        }
+      ],
+      "korean_original_pairs": [
+        [
+          [
+            "날랠"
+          ],
+          [
+            "용"
+          ]
+        ]
+      ],
+      "variant_source": null,
+      "variant_original_line": null
+    },
+    {
+      "character": "勤",
+      "japanese_readings": [
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "キン"
+        },
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "ゴン"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "つと.める"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "-づと.め"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "つと.まる"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "いそ.しむ"
+        }
+      ],
+      "korean_reference_character": "勤",
+      "korean_original_rows": [
+        {
+          "main_sound": "근",
+          "level": "4급",
+          "hanja": "勤",
+          "meaning": "[[['부지런할'], ['근']]]",
+          "radical": "力",
+          "strokes": "11",
+          "total_strokes": "13"
+        }
+      ],
+      "korean_original_pairs": [
+        [
+          [
+            "부지런할"
+          ],
+          [
+            "근"
+          ]
+        ]
+      ],
+      "variant_source": null,
+      "variant_original_line": null
+    },
+    {
+      "character": "収",
+      "japanese_readings": [
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "シュウ"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "おさ.める"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "おさ.まる"
+        }
+      ],
+      "korean_reference_character": "收",
+      "korean_original_rows": [
+        {
+          "main_sound": "수",
+          "level": "4급Ⅱ",
+          "hanja": "收",
+          "meaning": "[[['거둘'], ['수']]]",
+          "radical": "攴",
+          "strokes": "2",
+          "total_strokes": "6"
+        }
+      ],
+      "korean_original_pairs": [
+        [
+          [
+            "거둘"
+          ],
+          [
+            "수"
+          ]
+        ]
+      ],
+      "variant_source": "joyo",
+      "variant_original_line": "収,joyo/variant,收"
+    },
+    {
+      "character": "取",
+      "japanese_readings": [
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "シュ"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "と.る"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "と.り"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "と.り-"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "とり"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "-ど.り"
+        }
+      ],
+      "korean_reference_character": "取",
+      "korean_original_rows": [
+        {
+          "main_sound": "취",
+          "level": "4급Ⅱ",
+          "hanja": "取",
+          "meaning": "[[['가질'], ['취']]]",
+          "radical": "又",
+          "strokes": "6",
+          "total_strokes": "8"
+        }
+      ],
+      "korean_original_pairs": [
+        [
+          [
+            "가질"
+          ],
+          [
+            "취"
+          ]
+        ]
+      ],
+      "variant_source": null,
+      "variant_original_line": null
+    },
+    {
+      "character": "吹",
+      "japanese_readings": [
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "スイ"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "ふ.く"
+        }
+      ],
+      "korean_reference_character": "吹",
+      "korean_original_rows": [
+        {
+          "main_sound": "취",
+          "level": "3급Ⅱ",
+          "hanja": "吹",
+          "meaning": "[[['불'], ['취']]]",
+          "radical": "口",
+          "strokes": "4",
+          "total_strokes": "7"
+        }
+      ],
+      "korean_original_pairs": [
+        [
+          [
+            "불"
+          ],
+          [
+            "취"
+          ]
+        ]
+      ],
+      "variant_source": null,
+      "variant_original_line": null
+    },
+    {
+      "character": "呼",
+      "japanese_readings": [
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "コ"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "よ.ぶ"
+        }
+      ],
+      "korean_reference_character": "呼",
+      "korean_original_rows": [
+        {
+          "main_sound": "호",
+          "level": "4급Ⅱ",
+          "hanja": "呼",
+          "meaning": "[[['부를'], ['호']]]",
+          "radical": "口",
+          "strokes": "5",
+          "total_strokes": "8"
+        }
+      ],
+      "korean_original_pairs": [
+        [
+          [
+            "부를"
+          ],
+          [
+            "호"
+          ]
+        ]
+      ],
+      "variant_source": null,
+      "variant_original_line": null
+    },
+    {
+      "character": "境",
+      "japanese_readings": [
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "キョウ"
+        },
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "ケイ"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "さかい"
+        }
+      ],
+      "korean_reference_character": "境",
+      "korean_original_rows": [
+        {
+          "main_sound": "경",
+          "level": "4급Ⅱ",
+          "hanja": "境",
+          "meaning": "[[['지경'], ['경']]]",
+          "radical": "土",
+          "strokes": "11",
+          "total_strokes": "14"
+        }
+      ],
+      "korean_original_pairs": [
+        [
+          [
+            "지경"
+          ],
+          [
+            "경"
+          ]
+        ]
+      ],
+      "variant_source": null,
+      "variant_original_line": null
+    },
+    {
+      "character": "女",
+      "japanese_readings": [
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "ジョ"
+        },
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "ニョ"
+        },
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "ニョウ"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "おんな"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "め"
+        }
+      ],
+      "korean_reference_character": "女",
+      "korean_original_rows": [
+        {
+          "main_sound": "녀",
+          "level": "8급",
+          "hanja": "女",
+          "meaning": "[[['계집'], ['녀']]]",
+          "radical": "女",
+          "strokes": "0",
+          "total_strokes": "3"
+        }
+      ],
+      "korean_original_pairs": [
+        [
+          [
+            "계집"
+          ],
+          [
+            "녀"
+          ]
+        ]
+      ],
+      "variant_source": null,
+      "variant_original_line": null
+    },
+    {
+      "character": "室",
+      "japanese_readings": [
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "シツ"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "むろ"
+        }
+      ],
+      "korean_reference_character": "室",
+      "korean_original_rows": [
+        {
+          "main_sound": "실",
+          "level": "8급",
+          "hanja": "室",
+          "meaning": "[[['집'], ['실']]]",
+          "radical": "宀",
+          "strokes": "6",
+          "total_strokes": "9"
+        }
+      ],
+      "korean_original_pairs": [
+        [
+          [
+            "집"
+          ],
+          [
+            "실"
+          ]
+        ]
+      ],
+      "variant_source": null,
+      "variant_original_line": null
+    },
+    {
+      "character": "届",
+      "japanese_readings": [
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "カイ"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "とど.ける"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "-とど.け"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "とど.く"
+        }
+      ],
+      "korean_reference_character": "屆",
+      "korean_original_rows": [
+        {
+          "main_sound": "계",
+          "level": "특급Ⅱ",
+          "hanja": "屆",
+          "meaning": "[[['이를[至]'], ['계']]]",
+          "radical": "尸",
+          "strokes": "5",
+          "total_strokes": "8"
+        }
+      ],
+      "korean_original_pairs": [
+        [
+          [
+            "이를[至]"
+          ],
+          [
+            "계"
+          ]
+        ]
+      ],
+      "variant_source": "joyo",
+      "variant_original_line": "届,joyo/variant,屆"
+    },
+    {
+      "character": "差",
+      "japanese_readings": [
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "サ"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "さ.す"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "さ.し"
+        }
+      ],
+      "korean_reference_character": "差",
+      "korean_original_rows": [
+        {
+          "main_sound": "차",
+          "level": "4급",
+          "hanja": "差",
+          "meaning": "[[['다를'], ['차']]]",
+          "radical": "工",
+          "strokes": "7",
+          "total_strokes": "10"
+        }
+      ],
+      "korean_original_pairs": [
+        [
+          [
+            "다를"
+          ],
+          [
+            "차"
+          ]
+        ]
+      ],
+      "variant_source": null,
+      "variant_original_line": null
+    },
+    {
+      "character": "布",
+      "japanese_readings": [
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "フ"
+        },
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "ホ"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "ぬの"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "し.く"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "きれ"
+        }
+      ],
+      "korean_reference_character": "布",
+      "korean_original_rows": [
+        {
+          "main_sound": "포",
+          "level": "4급Ⅱ",
+          "hanja": "布",
+          "meaning": "[[['베', '펼'], ['포']], [['보시'], ['보']]]",
+          "radical": "巾",
+          "strokes": "2",
+          "total_strokes": "5"
+        }
+      ],
+      "korean_original_pairs": [
+        [
+          [
+            "베",
+            "펼"
+          ],
+          [
+            "포"
+          ]
+        ],
+        [
+          [
+            "보시"
+          ],
+          [
+            "보"
+          ]
+        ]
+      ],
+      "variant_source": null,
+      "variant_original_line": null
+    },
+    {
+      "character": "引",
+      "japanese_readings": [
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "イン"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "ひ.く"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "ひ.ける"
+        }
+      ],
+      "korean_reference_character": "引",
+      "korean_original_rows": [
+        {
+          "main_sound": "인",
+          "level": "4급Ⅱ",
+          "hanja": "引",
+          "meaning": "[[['끌'], ['인']]]",
+          "radical": "弓",
+          "strokes": "1",
+          "total_strokes": "4"
+        }
+      ],
+      "korean_original_pairs": [
+        [
+          [
+            "끌"
+          ],
+          [
+            "인"
+          ]
+        ]
+      ],
+      "variant_source": null,
+      "variant_original_line": null
+    },
+    {
+      "character": "役",
+      "japanese_readings": [
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "ヤク"
+        },
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "エキ"
+        }
+      ],
+      "korean_reference_character": "役",
+      "korean_original_rows": [
+        {
+          "main_sound": "역",
+          "level": "3급Ⅱ",
+          "hanja": "役",
+          "meaning": "[[['부릴'], ['역']]]",
+          "radical": "彳",
+          "strokes": "4",
+          "total_strokes": "7"
+        }
+      ],
+      "korean_original_pairs": [
+        [
+          [
+            "부릴"
+          ],
+          [
+            "역"
+          ]
+        ]
+      ],
+      "variant_source": null,
+      "variant_original_line": null
+    },
+    {
+      "character": "忘",
+      "japanese_readings": [
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "ボウ"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "わす.れる"
+        }
+      ],
+      "korean_reference_character": "忘",
+      "korean_original_rows": [
+        {
+          "main_sound": "망",
+          "level": "3급",
+          "hanja": "忘",
+          "meaning": "[[['잊을'], ['망']]]",
+          "radical": "心",
+          "strokes": "3",
+          "total_strokes": "7"
+        }
+      ],
+      "korean_original_pairs": [
+        [
+          [
+            "잊을"
+          ],
+          [
+            "망"
+          ]
+        ]
+      ],
+      "variant_source": null,
+      "variant_original_line": null
+    },
+    {
+      "character": "思",
+      "japanese_readings": [
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "シ"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "おも.う"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "おもえら.く"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "おぼ.す"
+        }
+      ],
+      "korean_reference_character": "思",
+      "korean_original_rows": [
+        {
+          "main_sound": "사",
+          "level": "5급",
+          "hanja": "思",
+          "meaning": "[[['생각'], ['사']]]",
+          "radical": "心",
+          "strokes": "5",
+          "total_strokes": "9"
+        }
+      ],
+      "korean_original_pairs": [
+        [
+          [
+            "생각"
+          ],
+          [
+            "사"
+          ]
+        ]
+      ],
+      "variant_source": null,
+      "variant_original_line": null
+    },
+    {
+      "character": "性",
+      "japanese_readings": [
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "セイ"
+        },
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "ショウ"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "さが"
+        }
+      ],
+      "korean_reference_character": "性",
+      "korean_original_rows": [
+        {
+          "main_sound": "성",
+          "level": "5급Ⅱ",
+          "hanja": "性",
+          "meaning": "[[['성품'], ['성']]]",
+          "radical": "心",
+          "strokes": "5",
+          "total_strokes": "8"
+        }
+      ],
+      "korean_original_pairs": [
+        [
+          [
+            "성품"
+          ],
+          [
+            "성"
+          ]
+        ]
+      ],
+      "variant_source": null,
+      "variant_original_line": null
+    },
+    {
+      "character": "態",
+      "japanese_readings": [
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "タイ"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "わざ.と"
+        }
+      ],
+      "korean_reference_character": "態",
+      "korean_original_rows": [
+        {
+          "main_sound": "태",
+          "level": "4급Ⅱ",
+          "hanja": "態",
+          "meaning": "[[['모습'], ['태']]]",
+          "radical": "心",
+          "strokes": "10",
+          "total_strokes": "14"
+        }
+      ],
+      "korean_original_pairs": [
+        [
+          [
+            "모습"
+          ],
+          [
+            "태"
+          ]
+        ]
+      ],
+      "variant_source": null,
+      "variant_original_line": null
+    },
+    {
+      "character": "憩",
+      "japanese_readings": [
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "ケイ"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "いこ.い"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "いこ.う"
+        }
+      ],
+      "korean_reference_character": "憩",
+      "korean_original_rows": [
+        {
+          "main_sound": "게",
+          "level": "2급",
+          "hanja": "憩",
+          "meaning": "[[['쉴'], ['게']]]",
+          "radical": "心",
+          "strokes": "12",
+          "total_strokes": "16"
+        }
+      ],
+      "korean_original_pairs": [
+        [
+          [
+            "쉴"
+          ],
+          [
+            "게"
+          ]
+        ]
+      ],
+      "variant_source": null,
+      "variant_original_line": null
+    },
+    {
+      "character": "憶",
+      "japanese_readings": [
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "オク"
+        }
+      ],
+      "korean_reference_character": "憶",
+      "korean_original_rows": [
+        {
+          "main_sound": "억",
+          "level": "3급Ⅱ",
+          "hanja": "憶",
+          "meaning": "[[['생각할'], ['억']]]",
+          "radical": "心",
+          "strokes": "13",
+          "total_strokes": "16"
+        }
+      ],
+      "korean_original_pairs": [
+        [
+          [
+            "생각할"
+          ],
+          [
+            "억"
+          ]
+        ]
+      ],
+      "variant_source": null,
+      "variant_original_line": null
+    },
+    {
+      "character": "承",
+      "japanese_readings": [
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "ショウ"
+        },
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "ジョウ"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "うけたまわ.る"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "う.ける"
+        }
+      ],
+      "korean_reference_character": "承",
+      "korean_original_rows": [
+        {
+          "main_sound": "승",
+          "level": "4급Ⅱ",
+          "hanja": "承",
+          "meaning": "[[['이을'], ['승']]]",
+          "radical": "手",
+          "strokes": "4",
+          "total_strokes": "8"
+        }
+      ],
+      "korean_original_pairs": [
+        [
+          [
+            "이을"
+          ],
+          [
+            "승"
+          ]
+        ]
+      ],
+      "variant_source": null,
+      "variant_original_line": null
+    },
+    {
+      "character": "描",
+      "japanese_readings": [
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "ビョウ"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "えが.く"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "か.く"
+        }
+      ],
+      "korean_reference_character": "描",
+      "korean_original_rows": [
+        {
+          "main_sound": "묘",
+          "level": "1급",
+          "hanja": "描",
+          "meaning": "[[['그릴'], ['묘']]]",
+          "radical": "手",
+          "strokes": "9",
+          "total_strokes": "12"
+        }
+      ],
+      "korean_original_pairs": [
+        [
+          [
+            "그릴"
+          ],
+          [
+            "묘"
+          ]
+        ]
+      ],
+      "variant_source": null,
+      "variant_original_line": null
+    },
+    {
+      "character": "族",
+      "japanese_readings": [
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "ゾク"
+        }
+      ],
+      "korean_reference_character": "族",
+      "korean_original_rows": [
+        {
+          "main_sound": "족",
+          "level": "6급",
+          "hanja": "族",
+          "meaning": "[[['겨레'], ['족']]]",
+          "radical": "方",
+          "strokes": "7",
+          "total_strokes": "11"
+        }
+      ],
+      "korean_original_pairs": [
+        [
+          [
+            "겨레"
+          ],
+          [
+            "족"
+          ]
+        ]
+      ],
+      "variant_source": null,
+      "variant_original_line": null
+    },
+    {
+      "character": "暮",
+      "japanese_readings": [
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "ボ"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "く.れる"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "く.らす"
+        }
+      ],
+      "korean_reference_character": "暮",
+      "korean_original_rows": [
+        {
+          "main_sound": "모",
+          "level": "3급",
+          "hanja": "暮",
+          "meaning": "[[['저물'], ['모']]]",
+          "radical": "日",
+          "strokes": "11",
+          "total_strokes": "15"
+        }
+      ],
+      "korean_original_pairs": [
+        [
+          [
+            "저물"
+          ],
+          [
+            "모"
+          ]
+        ]
+      ],
+      "variant_source": null,
+      "variant_original_line": null
+    },
+    {
+      "character": "本",
+      "japanese_readings": [
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "ホン"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "もと"
+        }
+      ],
+      "korean_reference_character": "本",
+      "korean_original_rows": [
+        {
+          "main_sound": "본",
+          "level": "6급",
+          "hanja": "本",
+          "meaning": "[[['근본'], ['본']]]",
+          "radical": "木",
+          "strokes": "1",
+          "total_strokes": "5"
+        }
+      ],
+      "korean_original_pairs": [
+        [
+          [
+            "근본"
+          ],
+          [
+            "본"
+          ]
+        ]
+      ],
+      "variant_source": null,
+      "variant_original_line": null
+    },
+    {
+      "character": "机",
+      "japanese_readings": [
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "キ"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "つくえ"
+        }
+      ],
+      "korean_reference_character": "机",
+      "korean_original_rows": [
+        {
+          "main_sound": "궤",
+          "level": "1급",
+          "hanja": "机",
+          "meaning": "[[['책상'], ['궤']]]",
+          "radical": "木",
+          "strokes": "2",
+          "total_strokes": "6"
+        }
+      ],
+      "korean_original_pairs": [
+        [
+          [
+            "책상"
+          ],
+          [
+            "궤"
+          ]
+        ]
+      ],
+      "variant_source": null,
+      "variant_original_line": null
+    },
+    {
+      "character": "栄",
+      "japanese_readings": [
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "エイ"
+        },
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "ヨウ"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "さか.える"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "は.え"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "-ば.え"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "は.える"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "え"
+        }
+      ],
+      "korean_reference_character": "榮",
+      "korean_original_rows": [
+        {
+          "main_sound": "영",
+          "level": "4급Ⅱ",
+          "hanja": "榮",
+          "meaning": "[[['영화'], ['영']]]",
+          "radical": "木",
+          "strokes": "10",
+          "total_strokes": "14"
+        }
+      ],
+      "korean_original_pairs": [
+        [
+          [
+            "영화"
+          ],
+          [
+            "영"
+          ]
+        ]
+      ],
+      "variant_source": "joyo",
+      "variant_original_line": "栄,joyo/variant,榮"
+    },
+    {
+      "character": "棒",
+      "japanese_readings": [
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "ボウ"
+        }
+      ],
+      "korean_reference_character": "棒",
+      "korean_original_rows": [
+        {
+          "main_sound": "봉",
+          "level": "1급",
+          "hanja": "棒",
+          "meaning": "[[['막대'], ['봉']]]",
+          "radical": "木",
+          "strokes": "8",
+          "total_strokes": "12"
+        }
+      ],
+      "korean_original_pairs": [
+        [
+          [
+            "막대"
+          ],
+          [
+            "봉"
+          ]
+        ]
+      ],
+      "variant_source": null,
+      "variant_original_line": null
+    },
+    {
+      "character": "棚",
+      "japanese_readings": [
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "ホウ"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "たな"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "-だな"
+        }
+      ],
+      "korean_reference_character": "棚",
+      "korean_original_rows": [
+        {
+          "main_sound": "붕",
+          "level": "1급",
+          "hanja": "棚",
+          "meaning": "[[['사다리'], ['붕']]]",
+          "radical": "木",
+          "strokes": "8",
+          "total_strokes": "12"
+        }
+      ],
+      "korean_original_pairs": [
+        [
+          [
+            "사다리"
+          ],
+          [
+            "붕"
+          ]
+        ]
+      ],
+      "variant_source": null,
+      "variant_original_line": null
+    },
+    {
+      "character": "毛",
+      "japanese_readings": [
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "モウ"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "け"
+        }
+      ],
+      "korean_reference_character": "毛",
+      "korean_original_rows": [
+        {
+          "main_sound": "모",
+          "level": "4급Ⅱ",
+          "hanja": "毛",
+          "meaning": "[[['터럭'], ['모']]]",
+          "radical": "毛",
+          "strokes": "0",
+          "total_strokes": "4"
+        }
+      ],
+      "korean_original_pairs": [
+        [
+          [
+            "터럭"
+          ],
+          [
+            "모"
+          ]
+        ]
+      ],
+      "variant_source": null,
+      "variant_original_line": null
+    },
+    {
+      "character": "況",
+      "japanese_readings": [
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "キョウ"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "まし.て"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "いわ.んや"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "おもむき"
+        }
+      ],
+      "korean_reference_character": "況",
+      "korean_original_rows": [
+        {
+          "main_sound": "황",
+          "level": "4급",
+          "hanja": "況",
+          "meaning": "[[['상황'], ['황']]]",
+          "radical": "水",
+          "strokes": "5",
+          "total_strokes": "8"
+        }
+      ],
+      "korean_original_pairs": [
+        [
+          [
+            "상황"
+          ],
+          [
+            "황"
+          ]
+        ]
+      ],
+      "variant_source": null,
+      "variant_original_line": null
+    },
+    {
+      "character": "浮",
+      "japanese_readings": [
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "フ"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "う.く"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "う.かれる"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "う.かぶ"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "う.かべる"
+        }
+      ],
+      "korean_reference_character": "浮",
+      "korean_original_rows": [
+        {
+          "main_sound": "부",
+          "level": "3급Ⅱ",
+          "hanja": "浮",
+          "meaning": "[[['뜰'], ['부']]]",
+          "radical": "水",
+          "strokes": "7",
+          "total_strokes": "10"
+        }
+      ],
+      "korean_original_pairs": [
+        [
+          [
+            "뜰"
+          ],
+          [
+            "부"
+          ]
+        ]
+      ],
+      "variant_source": null,
+      "variant_original_line": null
+    },
+    {
+      "character": "済",
+      "japanese_readings": [
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "サイ"
+        },
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "セイ"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "す.む"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "-ず.み"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "-ずみ"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "す.まない"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "す.ます"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "-す.ます"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "すく.う"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "な.す"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "わたし"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "わた.る"
+        }
+      ],
+      "korean_reference_character": "濟",
+      "korean_original_rows": [
+        {
+          "main_sound": "제",
+          "level": "4급Ⅱ",
+          "hanja": "濟",
+          "meaning": "[[['건널'], ['제']]]",
+          "radical": "水",
+          "strokes": "14",
+          "total_strokes": "17"
+        }
+      ],
+      "korean_original_pairs": [
+        [
+          [
+            "건널"
+          ],
+          [
+            "제"
+          ]
+        ]
+      ],
+      "variant_source": "joyo",
+      "variant_original_line": "済,joyo/variant,濟"
+    },
+    {
+      "character": "減",
+      "japanese_readings": [
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "ゲン"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "へ.る"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "へ.らす"
+        }
+      ],
+      "korean_reference_character": "減",
+      "korean_original_rows": [
+        {
+          "main_sound": "감",
+          "level": "4급Ⅱ",
+          "hanja": "減",
+          "meaning": "[[['덜'], ['감']]]",
+          "radical": "水",
+          "strokes": "9",
+          "total_strokes": "12"
+        }
+      ],
+      "korean_original_pairs": [
+        [
+          [
+            "덜"
+          ],
+          [
+            "감"
+          ]
+        ]
+      ],
+      "variant_source": null,
+      "variant_original_line": null
+    },
+    {
+      "character": "渡",
+      "japanese_readings": [
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "ト"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "わた.る"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "-わた.る"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "わた.す"
+        }
+      ],
+      "korean_reference_character": "渡",
+      "korean_original_rows": [
+        {
+          "main_sound": "도",
+          "level": "3급Ⅱ",
+          "hanja": "渡",
+          "meaning": "[[['건널'], ['도']]]",
+          "radical": "水",
+          "strokes": "9",
+          "total_strokes": "12"
+        }
+      ],
+      "korean_original_pairs": [
+        [
+          [
+            "건널"
+          ],
+          [
+            "도"
+          ]
+        ]
+      ],
+      "variant_source": null,
+      "variant_original_line": null
+    },
+    {
+      "character": "無",
+      "japanese_readings": [
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "ム"
+        },
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "ブ"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "な.い"
+        }
+      ],
+      "korean_reference_character": "無",
+      "korean_original_rows": [
+        {
+          "main_sound": "무",
+          "level": "5급",
+          "hanja": "無",
+          "meaning": "[[['없을'], ['무']]]",
+          "radical": "火",
+          "strokes": "8",
+          "total_strokes": "12"
+        }
+      ],
+      "korean_original_pairs": [
+        [
+          [
+            "없을"
+          ],
+          [
+            "무"
+          ]
+        ]
+      ],
+      "variant_source": null,
+      "variant_original_line": null
+    },
+    {
+      "character": "状",
+      "japanese_readings": [
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "ジョウ"
+        }
+      ],
+      "korean_reference_character": "狀",
+      "korean_original_rows": [
+        {
+          "main_sound": "상",
+          "level": "4급Ⅱ",
+          "hanja": "狀",
+          "meaning": "[[['형상'], ['상']], [['문서'], ['장']]]",
+          "radical": "犬",
+          "strokes": "4",
+          "total_strokes": "8"
+        }
+      ],
+      "korean_original_pairs": [
+        [
+          [
+            "형상"
+          ],
+          [
+            "상"
+          ]
+        ],
+        [
+          [
+            "문서"
+          ],
+          [
+            "장"
+          ]
+        ]
+      ],
+      "variant_source": "joyo",
+      "variant_original_line": "状,joyo/variant,狀"
+    },
+    {
+      "character": "理",
+      "japanese_readings": [
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "リ"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "ことわり"
+        }
+      ],
+      "korean_reference_character": "理",
+      "korean_original_rows": [
+        {
+          "main_sound": "리",
+          "level": "6급Ⅱ",
+          "hanja": "理",
+          "meaning": "[[['다스릴'], ['리']]]",
+          "radical": "玉",
+          "strokes": "7",
+          "total_strokes": "11"
+        }
+      ],
+      "korean_original_pairs": [
+        [
+          [
+            "다스릴"
+          ],
+          [
+            "리"
+          ]
+        ]
+      ],
+      "variant_source": null,
+      "variant_original_line": null
+    },
+    {
+      "character": "環",
+      "japanese_readings": [
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "カン"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "わ"
+        }
+      ],
+      "korean_reference_character": "環",
+      "korean_original_rows": [
+        {
+          "main_sound": "환",
+          "level": "4급",
+          "hanja": "環",
+          "meaning": "[[['고리'], ['환']]]",
+          "radical": "玉",
+          "strokes": "13",
+          "total_strokes": "17"
+        }
+      ],
+      "korean_original_pairs": [
+        [
+          [
+            "고리"
+          ],
+          [
+            "환"
+          ]
+        ]
+      ],
+      "variant_source": null,
+      "variant_original_line": null
+    },
+    {
+      "character": "確",
+      "japanese_readings": [
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "カク"
+        },
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "コウ"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "たし.か"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "たし.かめる"
+        }
+      ],
+      "korean_reference_character": "確",
+      "korean_original_rows": [
+        {
+          "main_sound": "확",
+          "level": "4급Ⅱ",
+          "hanja": "確",
+          "meaning": "[[['굳을'], ['확']]]",
+          "radical": "石",
+          "strokes": "10",
+          "total_strokes": "15"
+        }
+      ],
+      "korean_original_pairs": [
+        [
+          [
+            "굳을"
+          ],
+          [
+            "확"
+          ]
+        ]
+      ],
+      "variant_source": null,
+      "variant_original_line": null
+    },
+    {
+      "character": "社",
+      "japanese_readings": [
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "シャ"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "やしろ"
+        }
+      ],
+      "korean_reference_character": "社",
+      "korean_original_rows": [
+        {
+          "main_sound": "사",
+          "level": "6급Ⅱ",
+          "hanja": "社",
+          "meaning": "[[['모일'], ['사']]]",
+          "radical": "示",
+          "strokes": "3",
+          "total_strokes": "8"
+        }
+      ],
+      "korean_original_pairs": [
+        [
+          [
+            "모일"
+          ],
+          [
+            "사"
+          ]
+        ]
+      ],
+      "variant_source": null,
+      "variant_original_line": null
+    },
+    {
+      "character": "移",
+      "japanese_readings": [
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "イ"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "うつ.る"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "うつ.す"
+        }
+      ],
+      "korean_reference_character": "移",
+      "korean_original_rows": [
+        {
+          "main_sound": "이",
+          "level": "4급Ⅱ",
+          "hanja": "移",
+          "meaning": "[[['옮길'], ['이']]]",
+          "radical": "禾",
+          "strokes": "6",
+          "total_strokes": "11"
+        }
+      ],
+      "korean_original_pairs": [
+        [
+          [
+            "옮길"
+          ],
+          [
+            "이"
+          ]
+        ]
+      ],
+      "variant_source": null,
+      "variant_original_line": null
+    },
+    {
+      "character": "締",
+      "japanese_readings": [
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "テイ"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "し.まる"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "し.まり"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "し.める"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "-し.め"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "-じ.め"
+        }
+      ],
+      "korean_reference_character": "締",
+      "korean_original_rows": [
+        {
+          "main_sound": "체",
+          "level": "2급",
+          "hanja": "締",
+          "meaning": "[[['맺을'], ['체']]]",
+          "radical": "糸",
+          "strokes": "9",
+          "total_strokes": "15"
+        }
+      ],
+      "korean_original_pairs": [
+        [
+          [
+            "맺을"
+          ],
+          [
+            "체"
+          ]
+        ]
+      ],
+      "variant_source": null,
+      "variant_original_line": null
+    },
+    {
+      "character": "置",
+      "japanese_readings": [
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "チ"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "お.く"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "-お.き"
+        }
+      ],
+      "korean_reference_character": "置",
+      "korean_original_rows": [
+        {
+          "main_sound": "치",
+          "level": "4급Ⅱ",
+          "hanja": "置",
+          "meaning": "[[['둘[措]'], ['치']]]",
+          "radical": "网",
+          "strokes": "8",
+          "total_strokes": "13"
+        }
+      ],
+      "korean_original_pairs": [
+        [
+          [
+            "둘[措]"
+          ],
+          [
+            "치"
+          ]
+        ]
+      ],
+      "variant_source": null,
+      "variant_original_line": null
+    },
+    {
+      "character": "考",
+      "japanese_readings": [
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "コウ"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "かんが.える"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "かんが.え"
+        }
+      ],
+      "korean_reference_character": "考",
+      "korean_original_rows": [
+        {
+          "main_sound": "고",
+          "level": "5급",
+          "hanja": "考",
+          "meaning": "[[['생각할'], ['고']]]",
+          "radical": "老",
+          "strokes": "2",
+          "total_strokes": "6"
+        }
+      ],
+      "korean_original_pairs": [
+        [
+          [
+            "생각할"
+          ],
+          [
+            "고"
+          ]
+        ]
+      ],
+      "variant_source": null,
+      "variant_original_line": null
+    },
+    {
+      "character": "能",
+      "japanese_readings": [
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "ノウ"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "よ.く"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "あた.う"
+        }
+      ],
+      "korean_reference_character": "能",
+      "korean_original_rows": [
+        {
+          "main_sound": "능",
+          "level": "5급Ⅱ",
+          "hanja": "能",
+          "meaning": "[[['능할'], ['능']]]",
+          "radical": "肉",
+          "strokes": "6",
+          "total_strokes": "10"
+        }
+      ],
+      "korean_original_pairs": [
+        [
+          [
+            "능할"
+          ],
+          [
+            "능"
+          ]
+        ]
+      ],
+      "variant_source": null,
+      "variant_original_line": null
+    },
+    {
+      "character": "船",
+      "japanese_readings": [
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "セン"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "ふね"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "ふな-"
+        }
+      ],
+      "korean_reference_character": "船",
+      "korean_original_rows": [
+        {
+          "main_sound": "선",
+          "level": "5급",
+          "hanja": "船",
+          "meaning": "[[['배'], ['선']]]",
+          "radical": "舟",
+          "strokes": "5",
+          "total_strokes": "11"
+        }
+      ],
+      "korean_original_pairs": [
+        [
+          [
+            "배"
+          ],
+          [
+            "선"
+          ]
+        ]
+      ],
+      "variant_source": null,
+      "variant_original_line": null
+    },
+    {
+      "character": "草",
+      "japanese_readings": [
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "ソウ"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "くさ"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "くさ-"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "-ぐさ"
+        }
+      ],
+      "korean_reference_character": "草",
+      "korean_original_rows": [
+        {
+          "main_sound": "초",
+          "level": "7급",
+          "hanja": "草",
+          "meaning": "[[['풀'], ['초']]]",
+          "radical": "艸",
+          "strokes": "6",
+          "total_strokes": "10"
+        }
+      ],
+      "korean_original_pairs": [
+        [
+          [
+            "풀"
+          ],
+          [
+            "초"
+          ]
+        ]
+      ],
+      "variant_source": null,
+      "variant_original_line": null
+    },
+    {
+      "character": "証",
+      "japanese_readings": [
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "ショウ"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "あかし"
+        }
+      ],
+      "korean_reference_character": "證",
+      "korean_original_rows": [
+        {
+          "main_sound": "증",
+          "level": "4급",
+          "hanja": "證",
+          "meaning": "[[['증거'], ['증']]]",
+          "radical": "言",
+          "strokes": "12",
+          "total_strokes": "19"
+        }
+      ],
+      "korean_original_pairs": [
+        [
+          [
+            "증거"
+          ],
+          [
+            "증"
+          ]
+        ]
+      ],
+      "variant_source": "joyo",
+      "variant_original_line": "証,joyo/variant,證"
+    },
+    {
+      "character": "認",
+      "japanese_readings": [
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "ニン"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "みと.める"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "したた.める"
+        }
+      ],
+      "korean_reference_character": "認",
+      "korean_original_rows": [
+        {
+          "main_sound": "인",
+          "level": "4급Ⅱ",
+          "hanja": "認",
+          "meaning": "[[['알[知]'], ['인']]]",
+          "radical": "言",
+          "strokes": "7",
+          "total_strokes": "14"
+        }
+      ],
+      "korean_original_pairs": [
+        [
+          [
+            "알[知]"
+          ],
+          [
+            "인"
+          ]
+        ]
+      ],
+      "variant_source": null,
+      "variant_original_line": null
+    },
+    {
+      "character": "請",
+      "japanese_readings": [
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "セイ"
+        },
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "シン"
+        },
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "ショウ"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "こ.う"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "う.ける"
+        }
+      ],
+      "korean_reference_character": "請",
+      "korean_original_rows": [
+        {
+          "main_sound": "청",
+          "level": "4급Ⅱ",
+          "hanja": "請",
+          "meaning": "[[['청할'], ['청']]]",
+          "radical": "言",
+          "strokes": "8",
+          "total_strokes": "15"
+        }
+      ],
+      "korean_original_pairs": [
+        [
+          [
+            "청할"
+          ],
+          [
+            "청"
+          ]
+        ]
+      ],
+      "variant_source": null,
+      "variant_original_line": null
+    },
+    {
+      "character": "財",
+      "japanese_readings": [
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "ザイ"
+        },
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "サイ"
+        },
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "ゾク"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "たから"
+        }
+      ],
+      "korean_reference_character": "財",
+      "korean_original_rows": [
+        {
+          "main_sound": "재",
+          "level": "5급Ⅱ",
+          "hanja": "財",
+          "meaning": "[[['재물'], ['재']]]",
+          "radical": "貝",
+          "strokes": "3",
+          "total_strokes": "10"
+        }
+      ],
+      "korean_original_pairs": [
+        [
+          [
+            "재물"
+          ],
+          [
+            "재"
+          ]
+        ]
+      ],
+      "variant_source": null,
+      "variant_original_line": null
+    },
+    {
+      "character": "貸",
+      "japanese_readings": [
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "タイ"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "か.す"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "か.し-"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "かし-"
+        }
+      ],
+      "korean_reference_character": "貸",
+      "korean_original_rows": [
+        {
+          "main_sound": "대",
+          "level": "3급Ⅱ",
+          "hanja": "貸",
+          "meaning": "[[['빌릴', '뀔'], ['대']]]",
+          "radical": "貝",
+          "strokes": "5",
+          "total_strokes": "12"
+        }
+      ],
+      "korean_original_pairs": [
+        [
+          [
+            "빌릴",
+            "뀔"
+          ],
+          [
+            "대"
+          ]
+        ]
+      ],
+      "variant_source": null,
+      "variant_original_line": null
+    },
+    {
+      "character": "質",
+      "japanese_readings": [
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "シツ"
+        },
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "シチ"
+        },
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "チ"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "たち"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "ただ.す"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "もと"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "わりふ"
+        }
+      ],
+      "korean_reference_character": "質",
+      "korean_original_rows": [
+        {
+          "main_sound": "질",
+          "level": "5급Ⅱ",
+          "hanja": "質",
+          "meaning": "[[['바탕'], ['질']]]",
+          "radical": "貝",
+          "strokes": "8",
+          "total_strokes": "15"
+        }
+      ],
+      "korean_original_pairs": [
+        [
+          [
+            "바탕"
+          ],
+          [
+            "질"
+          ]
+        ]
+      ],
+      "variant_source": null,
+      "variant_original_line": null
+    },
+    {
+      "character": "逃",
+      "japanese_readings": [
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "トウ"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "に.げる"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "に.がす"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "のが.す"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "のが.れる"
+        }
+      ],
+      "korean_reference_character": "逃",
+      "korean_original_rows": [
+        {
+          "main_sound": "도",
+          "level": "4급",
+          "hanja": "逃",
+          "meaning": "[[['도망할'], ['도']]]",
+          "radical": "辵",
+          "strokes": "6",
+          "total_strokes": "10"
+        }
+      ],
+      "korean_original_pairs": [
+        [
+          [
+            "도망할"
+          ],
+          [
+            "도"
+          ]
+        ]
+      ],
+      "variant_source": null,
+      "variant_original_line": null
+    },
+    {
+      "character": "邪",
+      "japanese_readings": [
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "ジャ"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "よこし.ま"
+        }
+      ],
+      "korean_reference_character": "邪",
+      "korean_original_rows": [
+        {
+          "main_sound": "사",
+          "level": "3급Ⅱ",
+          "hanja": "邪",
+          "meaning": "[[['간사할'], ['사']]]",
+          "radical": "邑",
+          "strokes": "4",
+          "total_strokes": "7"
+        }
+      ],
+      "korean_original_pairs": [
+        [
+          [
+            "간사할"
+          ],
+          [
+            "사"
+          ]
+        ]
+      ],
+      "variant_source": null,
+      "variant_original_line": null
+    },
+    {
+      "character": "開",
+      "japanese_readings": [
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "カイ"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "ひら.く"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "ひら.き"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "-びら.き"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "ひら.ける"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "あ.く"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "あ.ける"
+        }
+      ],
+      "korean_reference_character": "開",
+      "korean_original_rows": [
+        {
+          "main_sound": "개",
+          "level": "6급",
+          "hanja": "開",
+          "meaning": "[[['열'], ['개']]]",
+          "radical": "門",
+          "strokes": "4",
+          "total_strokes": "12"
+        }
+      ],
+      "korean_original_pairs": [
+        [
+          [
+            "열"
+          ],
+          [
+            "개"
+          ]
+        ]
+      ],
+      "variant_source": null,
+      "variant_original_line": null
+    },
+    {
+      "character": "額",
+      "japanese_readings": [
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "ガク"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "ひたい"
+        }
+      ],
+      "korean_reference_character": "額",
+      "korean_original_rows": [
+        {
+          "main_sound": "액",
+          "level": "4급",
+          "hanja": "額",
+          "meaning": "[[['이마'], ['액']]]",
+          "radical": "頁",
+          "strokes": "9",
+          "total_strokes": "18"
+        }
+      ],
+      "korean_original_pairs": [
+        [
+          [
+            "이마"
+          ],
+          [
+            "액"
+          ]
+        ]
+      ],
+      "variant_source": null,
+      "variant_original_line": null
+    },
+    {
+      "character": "養",
+      "japanese_readings": [
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "ヨウ"
+        },
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "リョウ"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "やしな.う"
+        }
+      ],
+      "korean_reference_character": "養",
+      "korean_original_rows": [
+        {
+          "main_sound": "양",
+          "level": "5급Ⅱ",
+          "hanja": "養",
+          "meaning": "[[['기를'], ['양']]]",
+          "radical": "食",
+          "strokes": "6",
+          "total_strokes": "15"
+        }
+      ],
+      "korean_original_pairs": [
+        [
+          [
+            "기를"
+          ],
+          [
+            "양"
+          ]
+        ]
+      ],
+      "variant_source": null,
+      "variant_original_line": null
+    },
+    {
+      "character": "驚",
+      "japanese_readings": [
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "キョウ"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "おどろ.く"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "おどろ.かす"
+        }
+      ],
+      "korean_reference_character": "驚",
+      "korean_original_rows": [
+        {
+          "main_sound": "경",
+          "level": "4급",
+          "hanja": "驚",
+          "meaning": "[[['놀랄'], ['경']]]",
+          "radical": "馬",
+          "strokes": "13",
+          "total_strokes": "23"
+        }
+      ],
+      "korean_original_pairs": [
+        [
+          [
+            "놀랄"
+          ],
+          [
+            "경"
+          ]
+        ]
+      ],
+      "variant_source": null,
+      "variant_original_line": null
+    },
+    {
+      "character": "髪",
+      "japanese_readings": [
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "ハツ"
+        },
+        {
+          "type": "ja_kun",
+          "onType": null,
+          "status": null,
+          "value": "かみ"
+        }
+      ],
+      "korean_reference_character": "髮",
+      "korean_original_rows": [
+        {
+          "main_sound": "발",
+          "level": "4급",
+          "hanja": "髮",
+          "meaning": "[[['터럭'], ['발']]]",
+          "radical": "髟",
+          "strokes": "5",
+          "total_strokes": "15"
+        }
+      ],
+      "korean_original_pairs": [
+        [
+          [
+            "터럭"
+          ],
+          [
+            "발"
+          ]
+        ]
+      ],
+      "variant_source": "joyo",
+      "variant_original_line": "髪,joyo/variant,髮"
+    },
+    {
+      "character": "魔",
+      "japanese_readings": [
+        {
+          "type": "ja_on",
+          "onType": null,
+          "status": null,
+          "value": "マ"
+        }
+      ],
+      "korean_reference_character": "魔",
+      "korean_original_rows": [
+        {
+          "main_sound": "마",
+          "level": "2급",
+          "hanja": "魔",
+          "meaning": "[[['마귀'], ['마']]]",
+          "radical": "鬼",
+          "strokes": "11",
+          "total_strokes": "21"
+        }
+      ],
+      "korean_original_pairs": [
+        [
+          [
+            "마귀"
+          ],
+          [
+            "마"
+          ]
+        ]
+      ],
+      "variant_source": null,
+      "variant_original_line": null
+    }
+  ]
+}
