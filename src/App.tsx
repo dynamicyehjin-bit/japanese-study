@@ -719,6 +719,7 @@ function App() {
             )
           ) : (
             <>
+              {page === "home" && <a className="secondary" href={`${import.meta.env.BASE_URL}n3/index.html`}>N3 20분 연습 · 학습 정원</a>}
               {page === "home" && <button className="secondary" onClick={() => navigate("today")}><ListChecks size={18} />오늘 복습할 단어 · {dailyWords.length}개<ChevronRight size={18} /></button>}
               {page === "today" && (
                 <section>
